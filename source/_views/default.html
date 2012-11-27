@@ -2,10 +2,24 @@
 <html>
     <head>
         <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
-        <link href="{{ site.url }}/css/main.css" rel="stylesheet" type="text/css" />
+        <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+        <header class="site">
+            <h1>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ site.url }}">Home</a></li>
+                    <li><a href="{{ site.url }}/blog">Posts Archive</a></li>
+                    <li><a href="{{ site.url }}/blog/tags">Tags</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mainContent">
+            {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+        </div>
+        <footer>
+        </footer>
     </body>
     {% if site.google_analytics_tracking_id %}
     <script type="text/javascript">

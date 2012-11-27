@@ -1,10 +1,13 @@
 ---
 layout: default
 title: Home
+generator: pagination
+pagination:
+    max_per_page: 3
 use:
     - posts
 ---
-{% for post in data.posts %}
+{% for post in page.pagination.items %}
     <article>
         <header>
             <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
@@ -22,3 +25,9 @@ use:
         {% endif %}
     </article>
 {% endfor %}
+{% if page.pagination.previous_page or page.pagination.next_page %}
+    <nav>
+        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
+        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
+    </nav>
+{% endif %}
