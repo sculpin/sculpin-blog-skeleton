@@ -6,6 +6,8 @@ pagination:
     provider: page.tagged_posts
 
 ---
+{% block title %}{{ page.title }} "{{ page.tag }}"{% endblock %}
+{% block content %}
 {% set year = '0' %}
 <h2>"{{ page.tag }}"</h2>
 {% for post in page.pagination.items %}
@@ -35,3 +37,4 @@ pagination:
     </nav>
 {% endif %}
 </div>
+{% endblock content %}
