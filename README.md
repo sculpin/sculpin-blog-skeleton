@@ -3,7 +3,7 @@ Sculpin Blog Skeleton
 
 A skeleton for a Sculpin based blog.
 
-Powered by [Sculpin](http://getsculpin.com). =)
+Powered by [Sculpin](http://sculpin.io). =)
 
 Build
 -----
