@@ -1,0 +1,12 @@
+---
+title: Tags
+use:
+    - posts_tags
+---
+<h1>Tags</h1>
+
+<div>
+{% for tag,posts in data.posts_tags %}
+<a href="{{ site.url }}/blog/tags/{{ tag }}">{{ tag }}</a>
+{% endfor %}
+</div>
