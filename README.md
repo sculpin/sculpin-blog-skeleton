@@ -42,7 +42,7 @@ If another port is required, it can be specified with the `--port` command.
 
 For example, to listen on port 9999 for all IP addresses:
 
-    vendor/bin/sculpin service --host=0.0.0.0 --port=9999
+    vendor/bin/sculpin serve --host=0.0.0.0 --port=9999
 
 ### Using a Standard Webserver
 
