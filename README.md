@@ -11,11 +11,15 @@ Build
 ### If You Already Have Composer
 
     composer create-project sculpin/blog-skeleton
+    cd blog-skeleton
+    vendor/bin/sculpin generate
 
 ### If You Need Composer
 
     wget http://getcomposer.org/composer.phar
     php composer.phar create-project sculpin/blog-skeleton
+    cd blog-skeleton
+    vendor/bin/sculpin generate
 
 
 Development Configuration
