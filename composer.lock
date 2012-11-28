@@ -1,5 +1,5 @@
 {
-    "hash": "e362b79c274762a81bcf8115d55a119b",
+    "hash": "971294d6b9062cd337133ec8122b78a3",
     "packages": [
         {
             "name": "composer/composer",
@@ -232,17 +232,17 @@
         },
         {
             "name": "dflydev/github-gist-twig-bundle",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "target-dir": "Dflydev/Bundle/GitHubGistTwigBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dflydev/dflydev-github-gist-twig-bundle",
-                "reference": "1f16b400eb0035f293e9aafafa9eae4e7d5ea8c5"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/dflydev/dflydev-github-gist-twig-bundle/archive/1f16b400eb0035f293e9aafafa9eae4e7d5ea8c5.zip",
-                "reference": "1f16b400eb0035f293e9aafafa9eae4e7d5ea8c5",
+                "url": "https://github.com/dflydev/dflydev-github-gist-twig-bundle/archive/v1.0.0.zip",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
@@ -260,7 +260,7 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Dflydev\\Bundle\\GitHubGistTwigBundle": ""
@@ -2130,7 +2130,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "sculpin/sculpin": 20,
-        "dflydev/github-gist-twig-bundle": 20,
         "composer/composer": 15,
         "netcarver/textile": 20
     }

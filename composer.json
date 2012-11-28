@@ -17,7 +17,7 @@
     ],
     "require": {
         "sculpin/sculpin": "2.*@dev",
-        "dflydev/github-gist-twig-bundle": "1.*@dev",
+        "dflydev/github-gist-twig-bundle": "1.*",
 
         "composer/composer": "1.*@alpha",
         "netcarver/textile": "2.5.*@dev"
