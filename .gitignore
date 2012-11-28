@@ -4,4 +4,3 @@
 /app/logs/*
 /output_*/
 /vendor/
-composer.lock
