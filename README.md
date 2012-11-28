@@ -16,7 +16,7 @@ Build
 
 ### If You Need Composer
 
-    wget http://getcomposer.org/composer.phar
+    curl -s https://getcomposer.org/installer | php
     php composer.phar create-project sculpin/blog-skeleton -s dev sculpin-blog
     cd blog-skeleton
     vendor/bin/sculpin generate --watch --server
