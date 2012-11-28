@@ -16,8 +16,10 @@
         }
     ],
     "require": {
-        "sculpin/sculpin": "2.*",
-        "dflydev/github-gist-twig-bundle": "1.*"
-    },
-    "minimum-stability": "dev"
+        "sculpin/sculpin": "2.*@dev",
+        "dflydev/github-gist-twig-bundle": "1.*@dev",
+
+        "composer/composer": "1.*@alpha",
+        "netcarver/textile": "2.5.*@dev"
+    }
 }

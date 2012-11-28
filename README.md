@@ -10,16 +10,16 @@ Build
 
 ### If You Already Have Composer
 
-    composer create-project sculpin/blog-skeleton
-    cd blog-skeleton
-    vendor/bin/sculpin generate
+    composer create-project sculpin/blog-skeleton -s dev sculpin-blog
+    cd sculpin-blog
+    vendor/bin/sculpin generate --watch --server
 
 ### If You Need Composer
 
     wget http://getcomposer.org/composer.phar
-    php composer.phar create-project sculpin/blog-skeleton
+    php composer.phar create-project sculpin/blog-skeleton -s dev sculpin-blog
     cd blog-skeleton
-    vendor/bin/sculpin generate
+    vendor/bin/sculpin generate --watch --server
 
 
 Previewing Development Builds
@@ -28,21 +28,37 @@ Previewing Development Builds
 By default the site will be generated in `output_dev/`. This is the location
 of your development build.
 
+To preview it with Sculpin's built in webserver, run either of the following
+commands. This will start a simple webserver listening at `localhost:8000`.
+
 ### Using Sculpin's Internal Webserver
 
-To preview it with Sculpin's built in webserver, run the following command.
-This will start a simple webserver listening at `localhost:8000`.
+#### Generate Command
 
-    vendor/bin/sculpin serve
+To serve files right after generating them, use the `generate` command with
+the `--server` option:
 
-If another IP address is required, it can be specified with the `--host`
-command. To listen on all IP addresses, use `0.0.0.0` for host.
+    vendor/bin/sculpin generate --server
 
-If another port is required, it can be specified with the `--port` command.
+To listen on a different port, specify the `--port` option:
 
-For example, to listen on port 9999 for all IP addresses:
+    vendor/bin/sculpin generate --server --port=9999
 
-    vendor/bin/sculpin serve --host=0.0.0.0 --port=9999
+Combine with `--watch` to have Sculpin pick up changes as you make them:
+
+    vendor/bin/sculpin generate --server --watch
+
+
+##### Server Command
+
+To serve files that have already been generated, use the `server` command:
+
+    vendor/bin/sculpin server
+
+To listen on a different port, specify the `--port` option:
+
+    vendor/bin/sculpin server --port=9999
+
 
 ### Using a Standard Webserver
 
@@ -50,21 +66,13 @@ The only special consideration that needs to be taken into account for standard
 webservers **in development** is the fact that the URLs generated may not match
 the path at which the site is installed.
 
-For example, if the site is created under a docroot at `blog-skeleton/`, and the
-files are generated in `blog-skeleton/output_dev/`, URLs may not work correctly
-if they are assuming that the site will be installed at a root.
-
-For example, `{{ site.url }}/about` will generate the URL `/about` by default.
-This will **not** work if the site is actually generating the about page at
-`blog-skeleton/output_dev/about`.
-
 This can be solved by overriding the `site.url` configuration option when
 generating the site.
 
     vendor/bin/sculpin generate --url=http://my.dev.host/blog-skeleton/output_dev
 
 With this option passed, `{{ site.url }}/about` will now be generated as
-`http://my.dev.host/blog-skelton/output_dev/about`.
+`http://my.dev.host/blog-skelton/output_dev/about` instead of `/about`.
 
 
 Publishing Production Builds
