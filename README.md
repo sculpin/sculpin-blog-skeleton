@@ -18,7 +18,7 @@ Build
 
     curl -s https://getcomposer.org/installer | php
     php composer.phar create-project sculpin/blog-skeleton -n -s dev sculpin-blog
-    cd blog-skeleton
+    cd sculpin-blog
     vendor/bin/sculpin generate --watch --server
 
 
