@@ -1055,12 +1055,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "da6284883d38fba37d4fc080dabfd8a161e35436"
+                "reference": "2d7cc072c13e55e39dcfb2acfa732366941c0aa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/da6284883d38fba37d4fc080dabfd8a161e35436.zip",
-                "reference": "da6284883d38fba37d4fc080dabfd8a161e35436",
+                "url": "https://github.com/sculpin/sculpin/archive/2d7cc072c13e55e39dcfb2acfa732366941c0aa7.zip",
+                "reference": "2d7cc072c13e55e39dcfb2acfa732366941c0aa7",
                 "shasum": ""
             },
             "require": {
@@ -1097,7 +1097,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-11-28 17:25:56",
+            "time": "2012-12-03 20:56:32",
             "bin": [
                 "bin/sculpin"
             ],
