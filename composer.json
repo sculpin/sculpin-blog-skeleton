@@ -19,7 +19,7 @@
         "sculpin/sculpin": "2.*@dev",
         "dflydev/github-gist-twig-bundle": "1.*",
 
-        "composer/composer": "1.*@alpha",
+        "composer/composer": "1.*@dev",
         "netcarver/textile": "2.5.*@dev"
     }
 }
