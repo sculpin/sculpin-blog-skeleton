@@ -69,22 +69,22 @@
         },
         {
             "name": "dflydev/ant-path-matcher",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dflydev/dflydev-util-antPathMatcher.git",
-                "reference": "v1.0.2"
+                "reference": "v1.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/dflydev/dflydev-util-antPathMatcher/zipball/v1.0.2",
-                "reference": "v1.0.2",
+                "url": "https://github.com/dflydev/dflydev-util-antPathMatcher/archive/v1.0.3.zip",
+                "reference": "v1.0.3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
             },
-            "time": "2012-07-15 06:15:25",
+            "time": "2012-12-03 05:03:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -92,6 +92,7 @@
                     "dflydev\\util\\antPathMatcher": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
