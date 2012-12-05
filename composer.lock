@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer",
-                "reference": "8af6581bdf3b13d740ce5be4d8e8aa21aa88f5bc"
+                "reference": "04c6670f0c1b87ef594adf6fd89a06bedac7489a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/composer/archive/8af6581bdf3b13d740ce5be4d8e8aa21aa88f5bc.zip",
-                "reference": "8af6581bdf3b13d740ce5be4d8e8aa21aa88f5bc",
+                "url": "https://github.com/composer/composer/archive/04c6670f0c1b87ef594adf6fd89a06bedac7489a.zip",
+                "reference": "04c6670f0c1b87ef594adf6fd89a06bedac7489a",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
                 "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic",
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
             },
-            "time": "2012-12-05 20:44:20",
+            "time": "2012-12-05 22:23:01",
             "bin": [
                 "bin/composer"
             ],
@@ -1055,12 +1055,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "308b68fe5e85a2438e1119355d26d05a8c78ef88"
+                "reference": "489466a45df14ef80baf84c407cc989e8587d37f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/308b68fe5e85a2438e1119355d26d05a8c78ef88.zip",
-                "reference": "308b68fe5e85a2438e1119355d26d05a8c78ef88",
+                "url": "https://github.com/sculpin/sculpin/archive/489466a45df14ef80baf84c407cc989e8587d37f.zip",
+                "reference": "489466a45df14ef80baf84c407cc989e8587d37f",
                 "shasum": ""
             },
             "require": {
@@ -1097,7 +1097,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-05 20:22:54",
+            "time": "2012-12-05 22:37:24",
             "bin": [
                 "bin/sculpin"
             ],
@@ -2124,6 +2124,7 @@
                     "Twig_": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3"
             ],
