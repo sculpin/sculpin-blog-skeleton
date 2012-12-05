@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer",
-                "reference": "c281315fb48fc39b9ed639d4bfcd31f46f54b79d"
+                "reference": "8af6581bdf3b13d740ce5be4d8e8aa21aa88f5bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/composer/archive/c281315fb48fc39b9ed639d4bfcd31f46f54b79d.zip",
-                "reference": "c281315fb48fc39b9ed639d4bfcd31f46f54b79d",
+                "url": "https://github.com/composer/composer/archive/8af6581bdf3b13d740ce5be4d8e8aa21aa88f5bc.zip",
+                "reference": "8af6581bdf3b13d740ce5be4d8e8aa21aa88f5bc",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
                 "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic",
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
             },
-            "time": "2012-12-03 16:24:56",
+            "time": "2012-12-05 20:44:20",
             "bin": [
                 "bin/composer"
             ],
@@ -850,15 +850,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/netcarver/textile",
-                "reference": "b1d4fad7e7592cc80f323e7c805aba16da27a881"
+                "reference": "7fbca8952859290415d99fd37f76f011f65cfe3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/netcarver/textile/archive/b1d4fad7e7592cc80f323e7c805aba16da27a881.zip",
-                "reference": "b1d4fad7e7592cc80f323e7c805aba16da27a881",
+                "url": "https://github.com/netcarver/textile/archive/7fbca8952859290415d99fd37f76f011f65cfe3f.zip",
+                "reference": "7fbca8952859290415d99fd37f76f011f65cfe3f",
                 "shasum": ""
             },
-            "time": "2012-12-01 22:14:06",
+            "time": "2012-12-04 22:28:14",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1055,12 +1055,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "2d7cc072c13e55e39dcfb2acfa732366941c0aa7"
+                "reference": "308b68fe5e85a2438e1119355d26d05a8c78ef88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/2d7cc072c13e55e39dcfb2acfa732366941c0aa7.zip",
-                "reference": "2d7cc072c13e55e39dcfb2acfa732366941c0aa7",
+                "url": "https://github.com/sculpin/sculpin/archive/308b68fe5e85a2438e1119355d26d05a8c78ef88.zip",
+                "reference": "308b68fe5e85a2438e1119355d26d05a8c78ef88",
                 "shasum": ""
             },
             "require": {
@@ -1097,7 +1097,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-03 20:56:32",
+            "time": "2012-12-05 20:22:54",
             "bin": [
                 "bin/sculpin"
             ],
