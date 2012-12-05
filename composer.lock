@@ -1,5 +1,5 @@
 {
-    "hash": "4a98ecc7df64bf6dc9564160fb23dd68",
+    "hash": "28c4dcd2ab77de813fab3e722ee75b7a",
     "packages": [
         {
             "name": "composer/composer",
@@ -116,6 +116,59 @@
                 "ant",
                 "pattern",
                 "matcher"
+            ]
+        },
+        {
+            "name": "dflydev/apache-mime-types",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dflydev/dflydev-apache-mime-types",
+                "reference": "6257af26b3b7249b2238e0832dc105306421c21a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/dflydev/dflydev-apache-mime-types/archive/6257af26b3b7249b2238e0832dc105306421c21a.zip",
+                "reference": "6257af26b3b7249b2238e0832dc105306421c21a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "time": "2012-12-05 16:52:01",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Dflydev\\ApacheMimeTypes": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dragonfly Development Inc.",
+                    "email": "info@dflydev.com",
+                    "homepage": "http://dflydev.com"
+                },
+                {
+                    "name": "Beau Simensen",
+                    "email": "beau@dflydev.com",
+                    "homepage": "http://beausimensen.com"
+                }
+            ],
+            "description": "Apache MIME Types",
+            "keywords": [
+                "mime",
+                "apache",
+                "mimetypes"
             ]
         },
         {
@@ -1055,12 +1108,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "489466a45df14ef80baf84c407cc989e8587d37f"
+                "reference": "58f602c0b0d91f3abfedd21d4dc7c5c5b2ed2cac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/489466a45df14ef80baf84c407cc989e8587d37f.zip",
-                "reference": "489466a45df14ef80baf84c407cc989e8587d37f",
+                "url": "https://github.com/sculpin/sculpin/archive/58f602c0b0d91f3abfedd21d4dc7c5c5b2ed2cac.zip",
+                "reference": "58f602c0b0d91f3abfedd21d4dc7c5c5b2ed2cac",
                 "shasum": ""
             },
             "require": {
@@ -1084,7 +1137,8 @@
                 "twig/twig": ">=1.9.1,<1.10.0",
                 "netcarver/textile": "2.5.*",
                 "dflydev/symfony-finder-factory": "1.*",
-                "react/http": "0.2.*"
+                "react/http": "0.2.*",
+                "dflydev/apache-mime-types": "1.0.*@dev"
             },
             "replace": {
                 "sculpin/core": "self.version",
@@ -1097,7 +1151,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-05 22:37:24",
+            "time": "2012-12-05 23:02:45",
             "bin": [
                 "bin/sculpin"
             ],
@@ -2153,6 +2207,7 @@
     "stability-flags": {
         "sculpin/sculpin": 20,
         "composer/composer": 20,
+        "dflydev/apache-mime-types": 20,
         "netcarver/textile": 20
     }
 }
