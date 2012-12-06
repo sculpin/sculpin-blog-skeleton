@@ -20,7 +20,6 @@
         "dflydev/github-gist-twig-bundle": "1.*",
 
         "composer/composer": "1.*@dev",
-        "dflydev/apache-mime-types": "1.0.*@dev",
         "netcarver/textile": "2.5.*@dev"
     }
 }

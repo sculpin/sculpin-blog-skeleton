@@ -1,5 +1,5 @@
 {
-    "hash": "28c4dcd2ab77de813fab3e722ee75b7a",
+    "hash": "4a98ecc7df64bf6dc9564160fb23dd68",
     "packages": [
         {
             "name": "composer/composer",
@@ -120,29 +120,32 @@
         },
         {
             "name": "dflydev/apache-mime-types",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dflydev/dflydev-apache-mime-types",
-                "reference": "6257af26b3b7249b2238e0832dc105306421c21a"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/dflydev/dflydev-apache-mime-types/archive/6257af26b3b7249b2238e0832dc105306421c21a.zip",
-                "reference": "6257af26b3b7249b2238e0832dc105306421c21a",
+                "url": "https://github.com/dflydev/dflydev-apache-mime-types/archive/v1.0.0.zip",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
             },
-            "time": "2012-12-05 16:52:01",
+            "require-dev": {
+                "twig/twig": "1.*"
+            },
+            "time": "2012-12-06 21:22:16",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Dflydev\\ApacheMimeTypes": "src"
@@ -209,6 +212,7 @@
                     "Dflydev\\DotAccessConfiguration": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -261,6 +265,7 @@
                     "Dflydev\\DotAccessData": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -321,6 +326,7 @@
                     "Dflydev\\Bundle\\GitHubGistTwigBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -378,6 +384,7 @@
                     "Dflydev\\Twig\\Extension\\GitHubGist": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -427,6 +434,7 @@
                     "dflydev\\markdown": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "New BSD License"
             ],
@@ -486,6 +494,7 @@
                     "Dflydev\\PlaceholderResolver": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -539,6 +548,7 @@
                     "Dflydev\\Symfony\\FinderFactory": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -591,6 +601,7 @@
                     "Doctrine\\Common": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -655,6 +666,7 @@
                     "Evenement": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -697,6 +709,7 @@
                     "Guzzle\\Common": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -738,6 +751,7 @@
                     "Guzzle\\Http": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -784,6 +798,7 @@
                     "Guzzle\\Parser": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -824,6 +839,7 @@
                     "Guzzle\\Stream": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -867,6 +883,7 @@
                     "JsonSchema": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "NewBSD"
             ],
@@ -965,6 +982,7 @@
                     "React\\EventLoop": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1007,6 +1025,7 @@
                     "React\\Http": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1049,6 +1068,7 @@
                     "React\\Socket": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1093,6 +1113,7 @@
                     "React\\Stream": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1108,12 +1129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "8b4e846dc314ba82f31c48981b8d5fefa7aed0d0"
+                "reference": "50b856c66c21788ce8ec0c382d0e2f98ccdf99d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/8b4e846dc314ba82f31c48981b8d5fefa7aed0d0.zip",
-                "reference": "8b4e846dc314ba82f31c48981b8d5fefa7aed0d0",
+                "url": "https://github.com/sculpin/sculpin/archive/50b856c66c21788ce8ec0c382d0e2f98ccdf99d2.zip",
+                "reference": "50b856c66c21788ce8ec0c382d0e2f98ccdf99d2",
                 "shasum": ""
             },
             "require": {
@@ -1138,7 +1159,7 @@
                 "netcarver/textile": "2.5.*",
                 "dflydev/symfony-finder-factory": "1.*",
                 "react/http": "0.2.*",
-                "dflydev/apache-mime-types": "1.0.*@dev"
+                "dflydev/apache-mime-types": "1.*"
             },
             "replace": {
                 "sculpin/core": "self.version",
@@ -1151,7 +1172,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-06 16:17:07",
+            "time": "2012-12-06 22:00:07",
             "bin": [
                 "bin/sculpin"
             ],
@@ -1219,6 +1240,7 @@
                     "Seld\\JsonLint": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2207,7 +2229,6 @@
     "stability-flags": {
         "sculpin/sculpin": 20,
         "composer/composer": 20,
-        "dflydev/apache-mime-types": 20,
         "netcarver/textile": 20
     }
 }
