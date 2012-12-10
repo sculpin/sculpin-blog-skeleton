@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer",
-                "reference": "eef64d1189ba2651f0c702afb6705d5ac524cae9"
+                "reference": "3a0270147ad21fbb0c008ac8cc412f3fbb4e92bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/composer/archive/eef64d1189ba2651f0c702afb6705d5ac524cae9.zip",
-                "reference": "eef64d1189ba2651f0c702afb6705d5ac524cae9",
+                "url": "https://github.com/composer/composer/archive/3a0270147ad21fbb0c008ac8cc412f3fbb4e92bc.zip",
+                "reference": "3a0270147ad21fbb0c008ac8cc412f3fbb4e92bc",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
                 "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic",
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
             },
-            "time": "2012-12-06 09:26:16",
+            "time": "2012-12-10 15:28:59",
             "bin": [
                 "bin/composer"
             ],
@@ -625,9 +625,9 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -684,25 +684,30 @@
         },
         {
             "name": "guzzle/common",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "target-dir": "Guzzle/Common",
             "source": {
                 "type": "git",
                 "url": "git://github.com/guzzle/common.git",
-                "reference": "v3.0.5"
+                "reference": "v3.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/common/archive/v3.0.5.zip",
-                "reference": "v3.0.5",
+                "url": "https://github.com/guzzle/common/archive/v3.0.6.zip",
+                "reference": "v3.0.6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "symfony/event-dispatcher": "2.1.*"
+                "symfony/event-dispatcher": ">=2.1"
             },
-            "time": "2012-11-19 00:15:33",
+            "time": "2012-12-10 05:25:04",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "installation-source": "dist",
             "autoload": {
                 "psr-0": {
@@ -724,27 +729,33 @@
         },
         {
             "name": "guzzle/http",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "target-dir": "Guzzle/Http",
             "source": {
                 "type": "git",
                 "url": "git://github.com/guzzle/http.git",
-                "reference": "v3.0.5"
+                "reference": "v3.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/http/archive/v3.0.5.zip",
-                "reference": "v3.0.5",
+                "url": "https://github.com/guzzle/http/archive/v3.0.6.zip",
+                "reference": "v3.0.6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
+                "ext-curl": "*",
                 "guzzle/common": "self.version",
                 "guzzle/parser": "self.version",
                 "guzzle/stream": "self.version"
             },
-            "time": "2012-11-18 05:28:55",
+            "time": "2012-12-10 01:04:00",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "installation-source": "dist",
             "autoload": {
                 "psr-0": {
@@ -774,24 +785,29 @@
         },
         {
             "name": "guzzle/parser",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "target-dir": "Guzzle/Parser",
             "source": {
                 "type": "git",
                 "url": "git://github.com/guzzle/parser.git",
-                "reference": "v3.0.5"
+                "reference": "v3.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/parser/archive/v3.0.5.zip",
-                "reference": "v3.0.5",
+                "url": "https://github.com/guzzle/parser/archive/v3.0.6.zip",
+                "reference": "v3.0.6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "2012-11-19 00:07:13",
+            "time": "2012-12-07 16:45:11",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "installation-source": "dist",
             "autoload": {
                 "psr-0": {
@@ -814,25 +830,30 @@
         },
         {
             "name": "guzzle/stream",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "target-dir": "Guzzle/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/stream",
-                "reference": "v3.0.5"
+                "reference": "v3.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/stream/archive/v3.0.5.zip",
-                "reference": "v3.0.5",
+                "url": "https://github.com/guzzle/stream/archive/v3.0.6.zip",
+                "reference": "v3.0.6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "guzzle/common": "self.version"
             },
-            "time": "2012-11-11 23:54:57",
+            "time": "2012-12-07 16:45:11",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "installation-source": "dist",
             "autoload": {
                 "psr-0": {
@@ -920,15 +941,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/netcarver/textile",
-                "reference": "df795718e0eef7175e956799c1f98955145f13d1"
+                "reference": "c9cf07b8f43d428b333de117e92385702985a529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/netcarver/textile/archive/df795718e0eef7175e956799c1f98955145f13d1.zip",
-                "reference": "df795718e0eef7175e956799c1f98955145f13d1",
+                "url": "https://github.com/netcarver/textile/archive/c9cf07b8f43d428b333de117e92385702985a529.zip",
+                "reference": "c9cf07b8f43d428b333de117e92385702985a529",
                 "shasum": ""
             },
-            "time": "2012-12-06 12:10:42",
+            "time": "2012-12-08 22:21:04",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1129,12 +1150,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "50b856c66c21788ce8ec0c382d0e2f98ccdf99d2"
+                "reference": "6334f05bdac58233948e91ebbabd3f23e213c7d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/50b856c66c21788ce8ec0c382d0e2f98ccdf99d2.zip",
-                "reference": "50b856c66c21788ce8ec0c382d0e2f98ccdf99d2",
+                "url": "https://github.com/sculpin/sculpin/archive/6334f05bdac58233948e91ebbabd3f23e213c7d5.zip",
+                "reference": "6334f05bdac58233948e91ebbabd3f23e213c7d5",
                 "shasum": ""
             },
             "require": {
@@ -1172,7 +1193,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-06 22:00:07",
+            "time": "2012-12-10 22:19:25",
             "bin": [
                 "bin/sculpin"
             ],
