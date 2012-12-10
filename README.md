@@ -10,14 +10,14 @@ Build
 
 ### If You Already Have Composer
 
-    composer create-project sculpin/blog-skeleton -n -s dev sculpin-blog
+    composer create-project sculpin/blog-skeleton --prefer-dist -n -s dev sculpin-blog
     cd sculpin-blog
     vendor/bin/sculpin generate --watch --server
 
 ### If You Need Composer
 
     curl -s https://getcomposer.org/installer | php
-    php composer.phar create-project sculpin/blog-skeleton -n -s dev sculpin-blog
+    php composer.phar create-project sculpin/blog-skeleton --prefer-dist -n -s dev sculpin-blog
     cd sculpin-blog
     vendor/bin/sculpin generate --watch --server
 
