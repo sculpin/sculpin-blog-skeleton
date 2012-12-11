@@ -1,5 +1,5 @@
 {
-    "hash": "4a98ecc7df64bf6dc9564160fb23dd68",
+    "hash": "2903f1a4eee3f7d3f521810e0f8fc717",
     "packages": [
         {
             "name": "composer/composer",
@@ -937,30 +937,33 @@
         },
         {
             "name": "netcarver/textile",
-            "version": "dev-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netcarver/textile",
-                "reference": "c9cf07b8f43d428b333de117e92385702985a529"
+                "reference": "e81a319f2b1028dfa670727e680d01551e4ad0a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/netcarver/textile/archive/c9cf07b8f43d428b333de117e92385702985a529.zip",
-                "reference": "c9cf07b8f43d428b333de117e92385702985a529",
+                "url": "https://github.com/netcarver/textile/archive/e81a319f2b1028dfa670727e680d01551e4ad0a5.zip",
+                "reference": "e81a319f2b1028dfa670727e680d01551e4ad0a5",
                 "shasum": ""
             },
-            "time": "2012-12-08 22:21:04",
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2012-12-11 21:30:58",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-dev": "2.5-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "installation-source": "source",
             "autoload": {
-                "classmap": [
-                    "classTextile.php"
-                ]
+                "psr-0": {
+                    "Netcarver\\Textile": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1150,12 +1153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "6334f05bdac58233948e91ebbabd3f23e213c7d5"
+                "reference": "3864b62e31c6e3999d061d1c3267f638e1d238a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/6334f05bdac58233948e91ebbabd3f23e213c7d5.zip",
-                "reference": "6334f05bdac58233948e91ebbabd3f23e213c7d5",
+                "url": "https://github.com/sculpin/sculpin/archive/3864b62e31c6e3999d061d1c3267f638e1d238a0.zip",
+                "reference": "3864b62e31c6e3999d061d1c3267f638e1d238a0",
                 "shasum": ""
             },
             "require": {
@@ -1177,10 +1180,10 @@
                 "symfony/twig-bundle": ">=2.1,<3.0",
                 "symfony/yaml": ">=2.1,<3.0",
                 "twig/twig": ">=1.9.1,<1.10.0",
-                "netcarver/textile": "2.5.*",
                 "dflydev/symfony-finder-factory": "1.*",
                 "react/http": "0.2.*",
-                "dflydev/apache-mime-types": "1.*"
+                "dflydev/apache-mime-types": "1.*",
+                "netcarver/textile": "3.5.*"
             },
             "replace": {
                 "sculpin/core": "self.version",
@@ -1193,7 +1196,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-10 22:19:25",
+            "time": "2012-12-11 22:36:11",
             "bin": [
                 "bin/sculpin"
             ],
