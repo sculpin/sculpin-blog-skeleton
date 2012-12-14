@@ -19,6 +19,7 @@
         "sculpin/sculpin": "2.*@dev",
         "dflydev/github-gist-twig-bundle": "1.*",
 
+        "dflydev/embedded-composer": "1.*@dev",
         "composer/composer": "1.*@dev"
     }
 }

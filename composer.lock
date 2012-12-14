@@ -1,5 +1,5 @@
 {
-    "hash": "069a0ba5030ebf0784a26b49d3c8ab85",
+    "hash": "caed274bf725436029927767aa52655c",
     "packages": [
         {
             "name": "composer/composer",
@@ -288,6 +288,74 @@
                 "access",
                 "dot",
                 "notation"
+            ]
+        },
+        {
+            "name": "dflydev/embedded-composer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dflydev/dflydev-embedded-composer",
+                "reference": "ec6aac4de920533e98019dba21b0befcfc4a3c49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/dflydev/dflydev-embedded-composer/archive/ec6aac4de920533e98019dba21b0befcfc4a3c49.zip",
+                "reference": "ec6aac4de920533e98019dba21b0befcfc4a3c49",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "composer/composer": "1.*@dev",
+                "seld/jsonlint": "1.*"
+            },
+            "replace": {
+                "dflydev/embedded-composer-bundle": "self.version",
+                "dflydev/embedded-composer-console": "self.version",
+                "dflydev/embedded-composer-core": "self.version"
+            },
+            "require-dev": {
+                "symfony/console": ">=2.1,<3.0",
+                "symfony/http-kernel": ">=2.1,<3.0"
+            },
+            "suggest": {
+                "symfony/console": "~2.1",
+                "symfony/http-kernel": "~2.1"
+            },
+            "time": "2012-12-14 05:31:26",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Dflydev\\EmbeddedComposer": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dragonfly Development Inc.",
+                    "email": "info@dflydev.com",
+                    "homepage": "http://dflydev.com"
+                },
+                {
+                    "name": "Beau Simensen",
+                    "email": "beau@dflydev.com",
+                    "homepage": "http://beausimensen.com"
+                }
+            ],
+            "description": "Embed Composer into another application",
+            "keywords": [
+                "composer",
+                "embedded",
+                "extensibility"
             ]
         },
         {
@@ -1153,12 +1221,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "a7a5460c9f00a8a9410e2b253801c597c1c4847c"
+                "reference": "611afe53ba48ddbc6130058fe7aff8862fda879f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/a7a5460c9f00a8a9410e2b253801c597c1c4847c.zip",
-                "reference": "a7a5460c9f00a8a9410e2b253801c597c1c4847c",
+                "url": "https://github.com/sculpin/sculpin/archive/611afe53ba48ddbc6130058fe7aff8862fda879f.zip",
+                "reference": "611afe53ba48ddbc6130058fe7aff8862fda879f",
                 "shasum": ""
             },
             "require": {
@@ -1183,7 +1251,8 @@
                 "dflydev/symfony-finder-factory": "1.*",
                 "react/http": "0.2.*",
                 "dflydev/apache-mime-types": "1.*",
-                "netcarver/textile": "3.5.*"
+                "netcarver/textile": "3.5.*",
+                "dflydev/embedded-composer": "1.*"
             },
             "replace": {
                 "sculpin/core": "self.version",
@@ -1192,11 +1261,10 @@
                 "sculpin/sculpin-bundle": "self.version",
                 "sculpin/standalone-bundle": "self.version",
                 "sculpin/twig-bundle": "self.version",
-                "sculpin/embedded-composer-bundle": "self.version",
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-13 13:46:07",
+            "time": "2012-12-14 05:38:18",
             "bin": [
                 "bin/sculpin"
             ],
@@ -2252,6 +2320,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "sculpin/sculpin": 20,
+        "dflydev/embedded-composer": 20,
         "composer/composer": 20
     }
 }
