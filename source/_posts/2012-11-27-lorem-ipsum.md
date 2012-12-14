@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Lorem Ipsum
+categories:
+    - testing
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue

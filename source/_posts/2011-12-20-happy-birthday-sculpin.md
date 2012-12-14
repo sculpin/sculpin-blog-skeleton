@@ -4,6 +4,8 @@ title: Happy Birthday Sculpin!
 tags:
     - sculpin
     - markdown
+categories:
+    - personal
 
 ---
 The first commit to the Sculpin repository was made on December 20th, 2011.
