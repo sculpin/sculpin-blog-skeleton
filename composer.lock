@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer",
-                "reference": "3a0270147ad21fbb0c008ac8cc412f3fbb4e92bc"
+                "reference": "51eca2cdfccec6e7f194316e78493f22c27e0a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/composer/archive/3a0270147ad21fbb0c008ac8cc412f3fbb4e92bc.zip",
-                "reference": "3a0270147ad21fbb0c008ac8cc412f3fbb4e92bc",
+                "url": "https://github.com/composer/composer/archive/51eca2cdfccec6e7f194316e78493f22c27e0a92.zip",
+                "reference": "51eca2cdfccec6e7f194316e78493f22c27e0a92",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
                 "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic",
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
             },
-            "time": "2012-12-10 15:28:59",
+            "time": "2012-12-13 16:39:17",
             "bin": [
                 "bin/composer"
             ],
@@ -1153,12 +1153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "f63b791b9177ae47e58536920e93cff4adbe454c"
+                "reference": "a7a5460c9f00a8a9410e2b253801c597c1c4847c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/f63b791b9177ae47e58536920e93cff4adbe454c.zip",
-                "reference": "f63b791b9177ae47e58536920e93cff4adbe454c",
+                "url": "https://github.com/sculpin/sculpin/archive/a7a5460c9f00a8a9410e2b253801c597c1c4847c.zip",
+                "reference": "a7a5460c9f00a8a9410e2b253801c597c1c4847c",
                 "shasum": ""
             },
             "require": {
@@ -1196,7 +1196,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-13 03:43:59",
+            "time": "2012-12-13 13:46:07",
             "bin": [
                 "bin/sculpin"
             ],
@@ -1238,22 +1238,22 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "http://github.com/Seldaek/jsonlint",
-                "reference": "1.0.1"
+                "reference": "1.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Seldaek/jsonlint/zipball/1.0.1",
-                "reference": "1.0.1",
+                "url": "https://github.com/Seldaek/jsonlint/archive/1.1.0.zip",
+                "reference": "1.1.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-08-13 07:00:11",
+            "time": "2012-12-13 18:26:19",
             "bin": [
                 "bin/jsonlint"
             ],
