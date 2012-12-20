@@ -1,5 +1,5 @@
 {
-    "hash": "caed274bf725436029927767aa52655c",
+    "hash": "63efb7fe80753922862e3df888b1d7d1",
     "packages": [
         {
             "name": "composer/composer",
@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer",
-                "reference": "51eca2cdfccec6e7f194316e78493f22c27e0a92"
+                "reference": "64ca297f9792dd8b9404e1e3f13b713bd72aa514"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/composer/archive/51eca2cdfccec6e7f194316e78493f22c27e0a92.zip",
-                "reference": "51eca2cdfccec6e7f194316e78493f22c27e0a92",
+                "url": "https://github.com/composer/composer/archive/64ca297f9792dd8b9404e1e3f13b713bd72aa514.zip",
+                "reference": "64ca297f9792dd8b9404e1e3f13b713bd72aa514",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
                 "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic",
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
             },
-            "time": "2012-12-13 16:39:17",
+            "time": "2012-12-19 09:50:56",
             "bin": [
                 "bin/composer"
             ],
@@ -359,125 +359,6 @@
             ]
         },
         {
-            "name": "dflydev/github-gist-twig-bundle",
-            "version": "v1.0.0",
-            "target-dir": "Dflydev/Bundle/GitHubGistTwigBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dflydev/dflydev-github-gist-twig-bundle",
-                "reference": "v1.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/dflydev/dflydev-github-gist-twig-bundle/archive/v1.0.0.zip",
-                "reference": "v1.0.0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "dflydev/github-gist-twig-extension": "2.*",
-                "symfony/http-kernel": ">=2.1,<3.0",
-                "symfony/config": ">=2.1,<3.0",
-                "symfony/console": ">=2.1,<3.0",
-                "symfony/dependency-injection": ">=2.1,<3.0"
-            },
-            "time": "2012-11-05 19:08:54",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-0": {
-                    "Dflydev\\Bundle\\GitHubGistTwigBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dragonfly Development Inc.",
-                    "email": "info@dflydev.com",
-                    "homepage": "http://dflydev.com"
-                },
-                {
-                    "name": "Beau Simensen",
-                    "email": "beau@dflydev.com",
-                    "homepage": "http://beausimensen.com"
-                }
-            ],
-            "description": "GitHub Gist Twig Bundle",
-            "homepage": "http://github.com/dflydev/dflydev-github-gist-twig-bundle",
-            "keywords": [
-                "twig",
-                "github",
-                "gist"
-            ]
-        },
-        {
-            "name": "dflydev/github-gist-twig-extension",
-            "version": "v2.0.1",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/dflydev/dflydev-github-gist-twig-extension.git",
-                "reference": "v2.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/dflydev/dflydev-github-gist-twig-extension/zipball/v2.0.1",
-                "reference": "v2.0.1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "twig/twig": ">=1.9.1,<2.0-dev"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "1.*"
-            },
-            "time": "2012-08-15 09:12:44",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-0": {
-                    "Dflydev\\Twig\\Extension\\GitHubGist": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dragonfly Development Inc.",
-                    "email": "info@dflydev.com",
-                    "homepage": "http://dflydev.com"
-                },
-                {
-                    "name": "Beau Simensen",
-                    "email": "beau@dflydev.com",
-                    "homepage": "http://beausimensen.com"
-                }
-            ],
-            "description": "GitHub Gist Twig Extension",
-            "homepage": "http://github.com/dflydev/dflydev-github-gist-twig-extension",
-            "keywords": [
-                "twig",
-                "github",
-                "gist",
-                "extension"
-            ]
-        },
-        {
             "name": "dflydev/markdown",
             "version": "v1.0.2",
             "source": {
@@ -695,7 +576,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -752,24 +633,24 @@
         },
         {
             "name": "guzzle/common",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "target-dir": "Guzzle/Common",
             "source": {
                 "type": "git",
                 "url": "git://github.com/guzzle/common.git",
-                "reference": "v3.0.6"
+                "reference": "v3.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/common/archive/v3.0.6.zip",
-                "reference": "v3.0.6",
+                "url": "https://github.com/guzzle/common/archive/v3.0.7.zip",
+                "reference": "v3.0.7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "symfony/event-dispatcher": ">=2.1"
             },
-            "time": "2012-12-10 05:25:04",
+            "time": "2012-12-19 23:06:35",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -797,17 +678,17 @@
         },
         {
             "name": "guzzle/http",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "target-dir": "Guzzle/Http",
             "source": {
                 "type": "git",
                 "url": "git://github.com/guzzle/http.git",
-                "reference": "v3.0.6"
+                "reference": "v3.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/http/archive/v3.0.6.zip",
-                "reference": "v3.0.6",
+                "url": "https://github.com/guzzle/http/archive/v3.0.7.zip",
+                "reference": "v3.0.7",
                 "shasum": ""
             },
             "require": {
@@ -817,7 +698,7 @@
                 "guzzle/parser": "self.version",
                 "guzzle/stream": "self.version"
             },
-            "time": "2012-12-10 01:04:00",
+            "time": "2012-12-14 00:49:17",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -853,17 +734,17 @@
         },
         {
             "name": "guzzle/parser",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "target-dir": "Guzzle/Parser",
             "source": {
                 "type": "git",
                 "url": "git://github.com/guzzle/parser.git",
-                "reference": "v3.0.6"
+                "reference": "v3.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/parser/archive/v3.0.6.zip",
-                "reference": "v3.0.6",
+                "url": "https://github.com/guzzle/parser/archive/v3.0.7.zip",
+                "reference": "v3.0.7",
                 "shasum": ""
             },
             "require": {
@@ -898,17 +779,17 @@
         },
         {
             "name": "guzzle/stream",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "target-dir": "Guzzle/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/stream",
-                "reference": "v3.0.6"
+                "reference": "v3.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/stream/archive/v3.0.6.zip",
-                "reference": "v3.0.6",
+                "url": "https://github.com/guzzle/stream/archive/v3.0.7.zip",
+                "reference": "v3.0.7",
                 "shasum": ""
             },
             "require": {
@@ -1221,12 +1102,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "23a04ea32c2ebc8e948512f8e98711120b5cff41"
+                "reference": "7e4803c138d8f8cafca4b656b72f495b02b3adc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/23a04ea32c2ebc8e948512f8e98711120b5cff41.zip",
-                "reference": "23a04ea32c2ebc8e948512f8e98711120b5cff41",
+                "url": "https://github.com/sculpin/sculpin/archive/7e4803c138d8f8cafca4b656b72f495b02b3adc7.zip",
+                "reference": "7e4803c138d8f8cafca4b656b72f495b02b3adc7",
                 "shasum": ""
             },
             "require": {
@@ -1264,7 +1145,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-14 17:36:12",
+            "time": "2012-12-14 19:04:22",
             "bin": [
                 "bin/sculpin"
             ],
