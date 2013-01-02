@@ -1,21 +1,28 @@
-* { -moz-box-sizing: border-box; box-sizing: border-box; }
-
-h1 small,h2 small,h3 small,h4 small
+h4 small
 {
-    font-size: 50%;
+    display: block;
+    font-size: 60%;
     color: #888;
 }
 
-header.site ul {
-    list-style: none;
-    padding-left: 0;
+.mainContent, footer.container {
+    max-width: 900px;
 }
-header.site ul li {
-    display: inline-block;
-    margin-right: .25em;
+
+footer.container {
+    margin-top: 30px;
+    padding: 30px 0;
+    border-top: 1px dashed #aaa;
 }
-header.site ul li a {
-    padding: .25em .5em;
-    background-color: #ccc;
-    border: 1px solid #888;
+
+@media (max-width: 767px) {
+    .sidebar {
+        padding-top: 30px;
+    }
+}
+@media (min-width: 980px) {
+    body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-bottom: 40px;
+    }
 }
