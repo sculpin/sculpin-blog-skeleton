@@ -926,17 +926,17 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/EventLoop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/event-loop/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/event-loop/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -946,7 +946,7 @@
                 "ext-libevent": ">=0.0.5",
                 "ext-libev": "*"
             },
-            "time": "2012-12-26 16:56:12",
+            "time": "2013-01-05 11:41:26",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -970,17 +970,17 @@
         },
         {
             "name": "react/http",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/Http",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/http",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/http/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/http/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -1013,17 +1013,17 @@
         },
         {
             "name": "react/socket",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/Socket",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/socket/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/socket/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -1056,17 +1056,17 @@
         },
         {
             "name": "react/stream",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/stream/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/stream/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -1106,12 +1106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "7e4803c138d8f8cafca4b656b72f495b02b3adc7"
+                "reference": "634683965813b7002cb27e9ab86c7121a0bac6a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/7e4803c138d8f8cafca4b656b72f495b02b3adc7.zip",
-                "reference": "7e4803c138d8f8cafca4b656b72f495b02b3adc7",
+                "url": "https://github.com/sculpin/sculpin/archive/634683965813b7002cb27e9ab86c7121a0bac6a5.zip",
+                "reference": "634683965813b7002cb27e9ab86c7121a0bac6a5",
                 "shasum": ""
             },
             "require": {
@@ -1132,12 +1132,12 @@
                 "symfony/process": ">=2.1,<3.0",
                 "symfony/twig-bundle": ">=2.1,<3.0",
                 "symfony/yaml": ">=2.1,<3.0",
-                "twig/twig": ">=1.9.1,<1.10.0",
                 "dflydev/symfony-finder-factory": "1.*",
                 "react/http": "0.2.*",
                 "dflydev/apache-mime-types": "1.*",
                 "netcarver/textile": "3.5.*",
-                "dflydev/embedded-composer": "1.*"
+                "dflydev/embedded-composer": "1.*",
+                "twig/twig": ">=1.9,<2.0"
             },
             "replace": {
                 "sculpin/core": "self.version",
@@ -1149,7 +1149,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2012-12-14 19:04:22",
+            "time": "2013-01-10 20:39:32",
             "bin": [
                 "bin/sculpin"
             ],
@@ -2064,26 +2064,26 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.9.2",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "v1.9.2"
+                "reference": "v1.12.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/zipball/v1.9.2",
-                "reference": "v1.9.2",
+                "url": "https://github.com/fabpot/Twig/archive/v1.12.0.zip",
+                "reference": "v1.12.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2012-08-25 10:32:57",
+            "time": "2013-01-08 13:42:43",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "installation-source": "dist",
