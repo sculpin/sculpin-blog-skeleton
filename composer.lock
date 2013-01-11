@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer",
-                "reference": "16671831eff58dd8ce3e27b29b98957ec16cc7d1"
+                "reference": "fed72a4803cdb5a277267fd2c3fa8d2764b37bf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/composer/archive/16671831eff58dd8ce3e27b29b98957ec16cc7d1.zip",
-                "reference": "16671831eff58dd8ce3e27b29b98957ec16cc7d1",
+                "url": "https://github.com/composer/composer/archive/fed72a4803cdb5a277267fd2c3fa8d2764b37bf1.zip",
+                "reference": "fed72a4803cdb5a277267fd2c3fa8d2764b37bf1",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
                 "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic",
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
             },
-            "time": "2013-01-10 16:55:41",
+            "time": "2013-01-11 21:57:28",
             "bin": [
                 "bin/composer"
             ],
@@ -1106,12 +1106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "634683965813b7002cb27e9ab86c7121a0bac6a5"
+                "reference": "1a70664c60450e658db42167e7e1de2342a6d76b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/634683965813b7002cb27e9ab86c7121a0bac6a5.zip",
-                "reference": "634683965813b7002cb27e9ab86c7121a0bac6a5",
+                "url": "https://github.com/sculpin/sculpin/archive/1a70664c60450e658db42167e7e1de2342a6d76b.zip",
+                "reference": "1a70664c60450e658db42167e7e1de2342a6d76b",
                 "shasum": ""
             },
             "require": {
@@ -1149,7 +1149,7 @@
                 "sculpin/posts-bundle": "self.version",
                 "sculpin/textile-bundle": "self.version"
             },
-            "time": "2013-01-10 20:39:32",
+            "time": "2013-01-11 22:03:40",
             "bin": [
                 "bin/sculpin"
             ],
