@@ -11,6 +11,11 @@
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+        <link rel="stylesheet" href="{{ site.url }}/highlight.js/styles/github.css" />
+        <style>
+        /** quick fix because bootstrap <pre> has a background-color. */
+        pre code { background-color: inherit; }
+        </style>
     </head>
     <body>
         <header>
@@ -78,4 +83,6 @@
         })();
     </script>
     {% endif %}
+    <script src="{{ site.url }}/highlight.js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </html>
