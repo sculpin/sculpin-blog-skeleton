@@ -1,5 +1,5 @@
 {
-    "hash": "63efb7fe80753922862e3df888b1d7d1",
+    "hash": "0b7c79d7400cb8ce0dcd52594c21cb4e",
     "packages": [
         {
             "name": "composer/composer",
@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer",
-                "reference": "0cc43436418286740bd3d9a13fcddde33733f4ff"
+                "reference": "aa1c09380d8bde3436594ec27f62ec7c0cf37591"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/composer/archive/0cc43436418286740bd3d9a13fcddde33733f4ff.zip",
-                "reference": "0cc43436418286740bd3d9a13fcddde33733f4ff",
+                "url": "https://api.github.com/repos/composer/composer/zipball/aa1c09380d8bde3436594ec27f62ec7c0cf37591",
+                "reference": "aa1c09380d8bde3436594ec27f62ec7c0cf37591",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
                 "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic",
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
             },
-            "time": "2013-01-21 14:32:09",
+            "time": "2013-02-01 22:37:12",
             "bin": [
                 "bin/composer"
             ],
@@ -303,7 +303,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/dflydev/dflydev-embedded-composer/archive/ec6aac4de920533e98019dba21b0befcfc4a3c49.zip",
+                "url": "https://api.github.com/repos/dflydev/dflydev-embedded-composer/zipball/ec6aac4de920533e98019dba21b0befcfc4a3c49",
                 "reference": "ec6aac4de920533e98019dba21b0befcfc4a3c49",
                 "shasum": ""
             },
@@ -359,61 +359,6 @@
                 "composer",
                 "embedded",
                 "extensibility"
-            ]
-        },
-        {
-            "name": "dflydev/markdown",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dflydev/dflydev-markdown.git",
-                "reference": "v1.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/dflydev/dflydev-markdown/zipball/v1.0.2",
-                "reference": "v1.0.2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "time": "2012-01-15 19:36:37",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-0": {
-                    "dflydev\\markdown": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "New BSD License"
-            ],
-            "authors": [
-                {
-                    "name": "Dragonfly Development Inc.",
-                    "email": "info@dflydev.com",
-                    "homepage": "http://dflydev.com"
-                },
-                {
-                    "name": "Beau Simensen",
-                    "email": "beau@dflydev.com",
-                    "homepage": "http://beausimensen.com"
-                },
-                {
-                    "name": "Michel Fortin",
-                    "homepage": "http://michelf.com"
-                },
-                {
-                    "name": "John Gruber",
-                    "homepage": "http://daringfireball.net"
-                }
-            ],
-            "description": "PHP Markdown & Extra",
-            "homepage": "http://github.com/dflydev/dflydev-markdown",
-            "keywords": [
-                "markdown"
             ]
         },
         {
@@ -841,14 +786,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/justinrainbow/json-schema/zipball/v1.1.0",
+                "url": "https://github.com/justinrainbow/json-schema/archive/v1.1.0.zip",
                 "reference": "v1.1.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-01-02 16:33:17",
+            "time": "2012-01-03 00:33:17",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -885,6 +830,58 @@
             "keywords": [
                 "json",
                 "schema"
+            ]
+        },
+        {
+            "name": "michelf/php-markdown",
+            "version": "1.3-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "1.3-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/1.3-beta5",
+                "reference": "1.3-beta5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2013-02-03 21:14:12",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-lib": "1.3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Michelf": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "http://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net/"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "http://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
             ]
         },
         {
@@ -1106,16 +1103,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "bdc7ffd1f16abd76ffb919bb6dfcec39b3afbc90"
+                "reference": "96c75e0d9b3bb256ca3e6d10ef9e24dbc23020e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sculpin/sculpin/archive/bdc7ffd1f16abd76ffb919bb6dfcec39b3afbc90.zip",
-                "reference": "bdc7ffd1f16abd76ffb919bb6dfcec39b3afbc90",
+                "url": "https://api.github.com/repos/sculpin/sculpin/zipball/96c75e0d9b3bb256ca3e6d10ef9e24dbc23020e4",
+                "reference": "96c75e0d9b3bb256ca3e6d10ef9e24dbc23020e4",
                 "shasum": ""
             },
             "require": {
-                "dflydev/markdown": "1.*",
                 "php": ">=5.3.2",
                 "dflydev/dot-access-configuration": "1.*",
                 "dflydev/ant-path-matcher": "1.*",
@@ -1137,7 +1133,8 @@
                 "dflydev/apache-mime-types": "1.*",
                 "netcarver/textile": "3.5.*",
                 "dflydev/embedded-composer": "1.*",
-                "twig/twig": ">=1.9,<2.0"
+                "twig/twig": ">=1.9,<2.0",
+                "michelf/php-markdown": "1.3.*"
             },
             "replace": {
                 "sculpin/core": "self.version",
@@ -1152,7 +1149,7 @@
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
             },
-            "time": "2013-01-22 17:26:05",
+            "time": "2013-02-06 16:20:36",
             "bin": [
                 "bin/sculpin"
             ],
@@ -1251,7 +1248,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/ClassLoader/archive/v2.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/v2.1.7",
                 "reference": "v2.1.7",
                 "shasum": ""
             },
@@ -1297,7 +1294,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Config/archive/v2.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/v2.1.7",
                 "reference": "v2.1.7",
                 "shasum": ""
             },
@@ -1340,7 +1337,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Console/archive/v2.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/v2.1.7",
                 "reference": "v2.1.7",
                 "shasum": ""
             },
@@ -1675,7 +1672,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpKernel/archive/v2.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/v2.1.7",
                 "reference": "v2.1.7",
                 "shasum": ""
             },
@@ -1702,7 +1699,7 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/finder": "2.1.*"
             },
-            "time": "2012-12-21 10:24:53",
+            "time": "2013-01-17 16:21:47",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -1738,7 +1735,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Process/archive/v2.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/v2.1.7",
                 "reference": "v2.1.7",
                 "shasum": ""
             },
@@ -1781,7 +1778,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Routing/archive/v2.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/v2.1.7",
                 "reference": "v2.1.7",
                 "shasum": ""
             },
@@ -2033,7 +2030,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Yaml/archive/v2.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.1.7",
                 "reference": "v2.1.7",
                 "shasum": ""
             },
@@ -2124,6 +2121,7 @@
     "stability-flags": {
         "sculpin/sculpin": 20,
         "dflydev/embedded-composer": 20,
+        "michelf/php-markdown": 10,
         "composer/composer": 20
     }
 }
