@@ -18,8 +18,8 @@
     "require": {
         "sculpin/sculpin": "2.*@dev",
 
-        "dflydev/embedded-composer": "1.*@dev",
-        "michelf/php-markdown": "1.3.*@beta",
-        "composer/composer": "1.*@dev"
+        "dflydev/embedded-composer": "@dev",
+        "michelf/php-markdown": "@beta",
+        "composer/composer": "@dev"
     }
 }
