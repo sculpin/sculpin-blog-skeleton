@@ -4,14 +4,14 @@
         <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="{{ site.url }}/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="{{ site.url }}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{ site.url }}/components/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="{{ site.url }}/components/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
         <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="{{ site.url }}/highlight.js/styles/github.css" />
+        <link rel="stylesheet" href="{{ site.url }}/components/highlightjs/styles/github.css" />
         <style>
         /** quick fix because bootstrap <pre> has a background-color. */
         pre code { background-color: inherit; }
@@ -63,9 +63,9 @@
             &copy; {{ site.title }}
         </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ site.url }}/js/libs/jquery-1.8.2.min.js"><\/script>')</script>
-        <script src="{{ site.url }}/bootstrap/js/bootstrap.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ site.url }}/components/jquery/jquery.js"><\/script>')</script>
+        <script src="{{ site.url }}/components/bootstrap/js/bootstrap.js"></script>
         {% block scripts %}
         {% endblock %}
 
@@ -82,7 +82,7 @@
             })();
         </script>
         {% endif %}
-        <script src="{{ site.url }}/highlight.js/highlight.pack.js"></script>
+        <script src="{{ site.url }}/components/highlightjs/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

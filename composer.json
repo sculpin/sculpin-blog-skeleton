@@ -18,8 +18,16 @@
     "require": {
         "sculpin/sculpin": "2.*@dev",
 
+        "components/bootstrap": "~2.3.1",
+        "components/jquery": "~1.9.1",
+        "components/highlightjs": "~7.3.0",
+
         "dflydev/embedded-composer": "@dev",
         "michelf/php-markdown": "@beta",
         "composer/composer": "@dev"
+    },
+    "config": {
+        "component-dir": "source/components",
+        "component-baseurl": "/components"
     }
 }
