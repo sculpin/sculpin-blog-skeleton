@@ -27,7 +27,6 @@
         "composer/composer": "@dev"
     },
     "config": {
-        "component-dir": "source/components",
-        "component-baseurl": "/components"
+        "component-dir": "source/components"
     }
 }
