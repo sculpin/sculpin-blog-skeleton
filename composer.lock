@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9b82de9ea240f731e1fd5d113e9cda5b",
+    "hash": "b20335b787c41748562b342792cca694",
     "packages": [
         {
             "name": "components/bootstrap",
@@ -156,19 +156,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "09e31bf70400af103236e068f40f368618e56524"
+                "reference": "343d4effaac3274ce1b8e7c64624f85c977ccb26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/09e31bf70400af103236e068f40f368618e56524",
-                "reference": "09e31bf70400af103236e068f40f368618e56524",
+                "url": "https://api.github.com/repos/composer/composer/zipball/343d4effaac3274ce1b8e7c64624f85c977ccb26",
+                "reference": "343d4effaac3274ce1b8e7c64624f85c977ccb26",
                 "shasum": ""
             },
             "require": {
                 "justinrainbow/json-schema": "1.1.*",
                 "php": ">=5.3.2",
                 "seld/jsonlint": "1.*",
-                "symfony/console": ">=2.1,<3.0",
+                "symfony/console": ">=2.3,<3.0",
                 "symfony/finder": ">=2.1,<3.0",
                 "symfony/process": ">=2.1,<3.0"
             },
@@ -217,7 +217,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2013-04-24 13:14:01"
+            "time": "2013-04-29 15:27:02"
         },
         {
             "name": "dflydev/ant-path-matcher",
@@ -1357,12 +1357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "9bc508a25e969e0aa0e4f7c3fe86cd72d7001833"
+                "reference": "a9044103d1ae72bfcfe279ff298fa352c9b8c435"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sculpin/sculpin/zipball/9bc508a25e969e0aa0e4f7c3fe86cd72d7001833",
-                "reference": "9bc508a25e969e0aa0e4f7c3fe86cd72d7001833",
+                "url": "https://api.github.com/repos/sculpin/sculpin/zipball/a9044103d1ae72bfcfe279ff298fa352c9b8c435",
+                "reference": "a9044103d1ae72bfcfe279ff298fa352c9b8c435",
                 "shasum": ""
             },
             "require": {
@@ -1378,7 +1378,7 @@
                 "react/http": "0.2.*",
                 "symfony/class-loader": ">=2.1,<3.0",
                 "symfony/config": ">=2.1,<3.0",
-                "symfony/console": ">=2.1,<3.0",
+                "symfony/console": ">=2.3,<3.0",
                 "symfony/dependency-injection": ">=2.1,<3.0",
                 "symfony/event-dispatcher": ">=2.1,<3.0",
                 "symfony/filesystem": ">=2.1,<3.0",
@@ -1386,7 +1386,6 @@
                 "symfony/framework-bundle": ">=2.1,<3.0",
                 "symfony/http-kernel": ">=2.1,<3.0",
                 "symfony/process": ">=2.1,<3.0",
-                "symfony/twig-bundle": ">=2.1,<3.0",
                 "symfony/yaml": ">=2.1,<3.0",
                 "twig/twig": ">=1.9,<2.0"
             },
@@ -1440,7 +1439,7 @@
                 "site",
                 "static"
             ],
-            "time": "2013-03-02 22:27:22"
+            "time": "2013-04-29 22:21:49"
         },
         {
             "name": "seld/jsonlint",
@@ -1588,26 +1587,29 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.2.1",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "v2.2.1"
+                "reference": "3b1de5a3e9157fcf506a709b48deedfea7092613"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/v2.2.1",
-                "reference": "v2.2.1",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/3b1de5a3e9157fcf506a709b48deedfea7092613",
+                "reference": "3b1de5a3e9157fcf506a709b48deedfea7092613",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
+            "require-dev": {
+                "symfony/event-dispatcher": ">=2.1,<3.0"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -1631,7 +1633,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-19 20:48:08"
+            "time": "2013-04-27 02:13:33"
         },
         {
             "name": "symfony/dependency-injection",
@@ -2277,123 +2279,6 @@
             "time": "2013-04-01 08:06:05"
         },
         {
-            "name": "symfony/twig-bridge",
-            "version": "v2.2.1",
-            "target-dir": "Symfony/Bridge/Twig",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/TwigBridge.git",
-                "reference": "v2.2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/TwigBridge/zipball/v2.2.1",
-                "reference": "v2.2.1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "twig/twig": ">=1.11.0,<2.0"
-            },
-            "require-dev": {
-                "symfony/form": "2.2.*",
-                "symfony/http-kernel": ">=2.2,<2.3-dev",
-                "symfony/routing": ">=2.2,<2.3-dev",
-                "symfony/security": ">=2.0,<2.3-dev",
-                "symfony/templating": ">=2.1,<3.0",
-                "symfony/translation": ">=2.0,<2.3-dev",
-                "symfony/yaml": ">=2.0,<3.0"
-            },
-            "suggest": {
-                "symfony/form": "2.2.*",
-                "symfony/http-kernel": "2.2.*",
-                "symfony/routing": "2.2.*",
-                "symfony/security": "2.2.*",
-                "symfony/templating": "2.2.*",
-                "symfony/translation": "2.2.*",
-                "symfony/yaml": "2.2.*"
-            },
-            "type": "symfony-bridge",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Bridge\\Twig\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Twig Bridge",
-            "homepage": "http://symfony.com",
-            "time": "2013-03-15 10:14:31"
-        },
-        {
-            "name": "symfony/twig-bundle",
-            "version": "v2.2.1",
-            "target-dir": "Symfony/Bundle/TwigBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/TwigBundle.git",
-                "reference": "v2.2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/TwigBundle/zipball/v2.2.1",
-                "reference": "v2.2.1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "symfony/twig-bridge": "2.2.*"
-            },
-            "require-dev": {
-                "symfony/stopwatch": ">=2.2,<2.3-dev"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Bundle\\TwigBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony TwigBundle",
-            "homepage": "http://symfony.com",
-            "time": "2013-02-08 16:10:54"
-        },
-        {
             "name": "symfony/yaml",
             "version": "v2.2.1",
             "target-dir": "Symfony/Component/Yaml",
@@ -2499,9 +2384,10 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "sculpin/sculpin": 20,
+        "composer/composer": 20,
         "dflydev/embedded-composer": 20,
         "michelf/php-markdown": 10,
-        "composer/composer": 20
+        "symfony/console": 20
     },
     "platform": [
 

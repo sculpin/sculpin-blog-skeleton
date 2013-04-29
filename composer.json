@@ -22,9 +22,10 @@
         "components/jquery": "~1.9.1",
         "components/highlightjs": "~7.3.0",
 
+        "composer/composer": "@dev",
         "dflydev/embedded-composer": "@dev",
         "michelf/php-markdown": "@beta",
-        "composer/composer": "@dev"
+        "symfony/console": "@dev"
     },
     "config": {
         "component-dir": "source/components"
