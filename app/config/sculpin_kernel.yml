@@ -1,4 +1,2 @@
-framework:
-    secret: not so secret but required to be set
 sculpin_posts:
     permalink: blog/:year/:month/:day/:filename/
