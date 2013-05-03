@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b20335b787c41748562b342792cca694",
+    "hash": "3c37b104e20ed5a2d9dd333fcc9de20d",
     "packages": [
         {
             "name": "components/bootstrap",
@@ -156,12 +156,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "343d4effaac3274ce1b8e7c64624f85c977ccb26"
+                "reference": "a7e88f7a80970c7b867bf5f5769a13446c75322a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/343d4effaac3274ce1b8e7c64624f85c977ccb26",
-                "reference": "343d4effaac3274ce1b8e7c64624f85c977ccb26",
+                "url": "https://api.github.com/repos/composer/composer/zipball/a7e88f7a80970c7b867bf5f5769a13446c75322a",
+                "reference": "a7e88f7a80970c7b867bf5f5769a13446c75322a",
                 "shasum": ""
             },
             "require": {
@@ -217,7 +217,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2013-04-29 15:27:02"
+            "time": "2013-05-02 15:43:45"
         },
         {
             "name": "dflydev/ant-path-matcher",
@@ -443,16 +443,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dflydev/dflydev-embedded-composer.git",
-                "reference": "ec6aac4de920533e98019dba21b0befcfc4a3c49"
+                "reference": "1d8634f7825c03b298a78fc263be673a9fad5ec9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dflydev/dflydev-embedded-composer/zipball/ec6aac4de920533e98019dba21b0befcfc4a3c49",
-                "reference": "ec6aac4de920533e98019dba21b0befcfc4a3c49",
+                "url": "https://api.github.com/repos/dflydev/dflydev-embedded-composer/zipball/1d8634f7825c03b298a78fc263be673a9fad5ec9",
+                "reference": "1d8634f7825c03b298a78fc263be673a9fad5ec9",
                 "shasum": ""
             },
             "require": {
-                "composer/composer": "1.*@dev",
+                "composer/composer": "1.0.*@dev",
                 "php": ">=5.3.2",
                 "seld/jsonlint": "1.*"
             },
@@ -462,11 +462,12 @@
                 "dflydev/embedded-composer-core": "self.version"
             },
             "require-dev": {
-                "symfony/console": ">=2.1,<3.0",
+                "phpunit/phpunit": ">=3.7.10.0,<3.8",
+                "symfony/console": ">=2.3,<3.0",
                 "symfony/http-kernel": ">=2.1,<3.0"
             },
             "suggest": {
-                "symfony/console": "~2.1",
+                "symfony/console": "~2.3",
                 "symfony/http-kernel": "~2.1"
             },
             "type": "library",
@@ -502,7 +503,7 @@
                 "embedded",
                 "extensibility"
             ],
-            "time": "2012-12-14 05:31:26"
+            "time": "2013-05-02 22:17:45"
         },
         {
             "name": "dflydev/placeholder-resolver",
@@ -1308,16 +1309,16 @@
         },
         {
             "name": "robloach/component-installer",
-            "version": "0.0.6",
+            "version": "0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobLoach/component-installer.git",
-                "reference": "0.0.6"
+                "reference": "0.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/0.0.6",
-                "reference": "0.0.6",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/0.0.7",
+                "reference": "0.0.7",
                 "shasum": ""
             },
             "require": {
@@ -1325,8 +1326,7 @@
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "composer/composer": "1.0.*@dev"
             },
             "type": "composer-installer",
             "extra": {
@@ -1349,7 +1349,7 @@
                 }
             ],
             "description": "Allows installation of Components via Composer.",
-            "time": "2013-04-22 04:09:17"
+            "time": "2013-05-02 22:37:51"
         },
         {
             "name": "sculpin/sculpin",
@@ -1357,12 +1357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "a9044103d1ae72bfcfe279ff298fa352c9b8c435"
+                "reference": "dbf09daf5cccdc2002b1cfdca0be06c3dfcfab13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sculpin/sculpin/zipball/a9044103d1ae72bfcfe279ff298fa352c9b8c435",
-                "reference": "a9044103d1ae72bfcfe279ff298fa352c9b8c435",
+                "url": "https://api.github.com/repos/sculpin/sculpin/zipball/dbf09daf5cccdc2002b1cfdca0be06c3dfcfab13",
+                "reference": "dbf09daf5cccdc2002b1cfdca0be06c3dfcfab13",
                 "shasum": ""
             },
             "require": {
@@ -1372,7 +1372,7 @@
                 "dflydev/dot-access-configuration": "1.*",
                 "dflydev/embedded-composer": "1.0.*@dev",
                 "dflydev/symfony-finder-factory": "1.*",
-                "michelf/php-markdown": "1.3.*@beta",
+                "michelf/php-markdown": "1.3.*",
                 "netcarver/textile": "3.5.*",
                 "php": ">=5.3.2",
                 "react/http": "0.2.*",
@@ -1439,7 +1439,7 @@
                 "site",
                 "static"
             ],
-            "time": "2013-04-29 22:21:49"
+            "time": "2013-05-03 00:34:57"
         },
         {
             "name": "seld/jsonlint",
@@ -1592,12 +1592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "3b1de5a3e9157fcf506a709b48deedfea7092613"
+                "reference": "v2.3.0-BETA1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/3b1de5a3e9157fcf506a709b48deedfea7092613",
-                "reference": "3b1de5a3e9157fcf506a709b48deedfea7092613",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/v2.3.0-BETA1",
+                "reference": "v2.3.0-BETA1",
                 "shasum": ""
             },
             "require": {
@@ -1633,7 +1633,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-27 02:13:33"
+            "time": "2013-04-30 07:16:44"
         },
         {
             "name": "symfony/dependency-injection",
@@ -2386,7 +2386,6 @@
         "sculpin/sculpin": 20,
         "composer/composer": 20,
         "dflydev/embedded-composer": 20,
-        "michelf/php-markdown": 10,
         "symfony/console": 20
     },
     "platform": [

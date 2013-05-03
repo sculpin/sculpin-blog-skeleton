@@ -24,7 +24,6 @@
 
         "composer/composer": "@dev",
         "dflydev/embedded-composer": "@dev",
-        "michelf/php-markdown": "@beta",
         "symfony/console": "@dev"
     },
     "config": {
