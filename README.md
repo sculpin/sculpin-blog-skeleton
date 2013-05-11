@@ -110,4 +110,6 @@ These files are suitable to be transfered directly to a production host. For exa
     vendor/bin/sculpin assets:install --env=prod output_prod
     rsync -avze 'ssh -p 999' output_prod/ user@yoursculpinsite.com:public_html
 
-In fact, `publish.sh` is provided to get you started.
+In fact, `publish.sh` is provided to get you started. If you plan on deploying to an
+Amazon S3 bucket, you can use `s3-publish.sh` alongside the `s3cmd` utility (must be
+installed separately).
