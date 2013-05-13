@@ -24,7 +24,9 @@
 
         "composer/composer": "@dev",
         "dflydev/embedded-composer": "@dev",
-        "symfony/console": "@dev"
+        "symfony/console": "@dev",
+        "symfony/debug": "@dev",
+        "symfony/http-kernel": "@dev"
     },
     "config": {
         "component-dir": "source/components"
