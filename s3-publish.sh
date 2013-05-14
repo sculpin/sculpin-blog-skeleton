@@ -17,7 +17,6 @@ fi
 # rm -rf output_prod/*
 
 vendor/bin/sculpin generate --env=prod || ( echo "Could not generate the site" && exit )
-vendor/bin/sculpin assets:install --env=prod output_prod || ( echo "Could not install assets for the site" && exit )
 
 S3CMD_PATH=`which s3cmd`
 if [ $? -ne 0 -o -z "$S3CMD_PATH" ]
