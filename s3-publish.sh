@@ -19,38 +19,38 @@ fi
 vendor/bin/sculpin generate --env=prod || ( echo "Could not generate the site" && exit )
 vendor/bin/sculpin assets:install --env=prod output_prod || ( echo "Could not install assets for the site" && exit )
 
-    S3CMD_PATH=`which s3cmd`
-    if [ $? -ne 0 -o -z "$S3CMD_PATH" ]
-    then
-        echo "s3cmd not found - unable to deploy"
-        exit 3
-    fi
+S3CMD_PATH=`which s3cmd`
+if [ $? -ne 0 -o -z "$S3CMD_PATH" ]
+then
+    echo "s3cmd not found - unable to deploy"
+    exit 3
+fi
 
-    if [ ! -f "$S3_CONFIG" ]
-    then
-        echo "Unable to find s3cmd config file - unable to deploy"
-        exit 4
-    fi
+if [ ! -f "$S3_CONFIG" ]
+then
+    echo "Unable to find s3cmd config file - unable to deploy"
+    exit 4
+fi
 
-    if [ "$S3_DELETE" = "true" ]
-    then
-        echo "Enabling DELETE_REMOVED"
-        DELETE_REMOVED='--delete-removed'
-    else
-        echo "Disabling DELETE_REMOVED"
-        DELETE_REMOVED='--no-delete-removed'
-    fi
+if [ "$S3_DELETE" = "true" ]
+then
+    echo "Enabling DELETE_REMOVED"
+    DELETE_REMOVED='--delete-removed'
+else
+    echo "Disabling DELETE_REMOVED"
+    DELETE_REMOVED='--no-delete-removed'
+fi
 
-    if [ "$S3_REGION" = "" ]
-    then
-        S3_REGION=US
-    fi
+if [ "$S3_REGION" = "" ]
+then
+    S3_REGION=US
+fi
 
-    if [ "$1" = "--dry-run" -o "$1" = "-n" ]
-    then
-        DRY_RUN='--dry-run'
-    else
-        DRY_RUN=''
-    fi
+if [ "$1" = "--dry-run" -o "$1" = "-n" ]
+then
+    DRY_RUN='--dry-run'
+else
+    DRY_RUN=''
+fi
 
-    s3cmd --config="$S3_CONFIG" $DRY_RUN --force --recursive $DELETE_REMOVED --bucket-location=$S3_REGION --progress --acl-public sync output_prod/ s3://$S3_BUCKET 
+s3cmd --config="$S3_CONFIG" $DRY_RUN --force --recursive $DELETE_REMOVED --bucket-location=$S3_REGION --progress --acl-public sync output_prod/ s3://$S3_BUCKET 
