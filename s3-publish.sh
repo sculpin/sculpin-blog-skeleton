@@ -9,7 +9,7 @@ else
     . s3.conf
 fi
 
-if [ "$1" != "--dry-run" -a "$1" != "-n" ]
+if [ "$1" == "--help" ]
 then
     echo "Usage: ./publish.sh [--dry-run|-n]"
     exit 2
