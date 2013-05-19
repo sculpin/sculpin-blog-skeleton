@@ -4,6 +4,9 @@ if [ ! -f "s3.conf" ]
 then
     echo "Unable to locate s3.conf file - use s3.conf.dist as a template for configuring your S3 settings."
     exit 1
+else
+    # Load config file
+    . s3.conf
 fi
 
 if [ "$1" != "--dry-run" -a "$1" != "-n" ]
