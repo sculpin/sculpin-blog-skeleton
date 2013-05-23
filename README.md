@@ -29,18 +29,19 @@ A very basic Sculpin based blog supporting the following features:
 Build
 -----
 
-### If You Already Have Composer
+### If You Already Have Sculpin
 
-    composer create-project sculpin/blog-skeleton --prefer-dist -n -s dev sculpin-blog
-    cd sculpin-blog
-    vendor/bin/sculpin generate --watch --server
+    sculpin install
+    sculpin generate --watch --server
 
-### If You Need Composer
+Your newly generated clone of sculpin-blog-skeleton is now
+accessible at `http://localhost:8000/`.
 
-    curl -s https://getcomposer.org/installer | php
-    php composer.phar create-project sculpin/blog-skeleton --prefer-dist -n -s dev sculpin-blog
-    cd sculpin-blog
-    vendor/bin/sculpin generate --watch --server
+### If You Need Sculpin
+
+    curl -s https://sculpin.io/installer | php
+    php sculpin.phar install
+    php sculpin.phar generate --watch --server
 
 
 Previewing Development Builds
@@ -59,26 +60,26 @@ commands. This will start a simple webserver listening at `localhost:8000`.
 To serve files right after generating them, use the `generate` command with
 the `--server` option:
 
-    vendor/bin/sculpin generate --server
+    sculpin generate --server
 
 To listen on a different port, specify the `--port` option:
 
-    vendor/bin/sculpin generate --server --port=9999
+    sculpin generate --server --port=9999
 
 Combine with `--watch` to have Sculpin pick up changes as you make them:
 
-    vendor/bin/sculpin generate --server --watch
+    sculpin generate --server --watch
 
 
 ##### Server Command
 
-To serve files that have already been generated, use the `server` command:
+To serve files that have already been generated, use the `serve` command:
 
-    vendor/bin/sculpin server
+    sculpin serve
 
 To listen on a different port, specify the `--port` option:
 
-    vendor/bin/sculpin server --port=9999
+    sculpin serve --port=9999
 
 
 ### Using a Standard Webserver
@@ -90,7 +91,7 @@ the path at which the site is installed.
 This can be solved by overriding the `site.url` configuration option when
 generating the site.
 
-    vendor/bin/sculpin generate --url=http://my.dev.host/blog-skeleton/output_dev
+    sculpin generate --url=http://my.dev.host/blog-skeleton/output_dev
 
 With this option passed, `{{ site.url }}/about` will now be generated as
 `http://my.dev.host/blog-skelton/output_dev/about` instead of `/about`.
@@ -102,12 +103,11 @@ Publishing Production Builds
 When `--env=prod` is specified, the site will be generated in `output_prod/`. This
 is the location of your production build.
 
-    vendor/bin/sculpin generate --env=prod
+    sculpin generate --env=prod
 
 These files are suitable to be transfered directly to a production host. For example:
 
-    vendor/bin/sculpin generate --env=prod
-    vendor/bin/sculpin assets:install --env=prod output_prod
+    sculpin generate --env=prod
     rsync -avze 'ssh -p 999' output_prod/ user@yoursculpinsite.com:public_html
 
 In fact, `publish.sh` is provided to get you started. If you plan on deploying to an
