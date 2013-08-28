@@ -39,7 +39,7 @@ accessible at `http://localhost:8000/`.
 
 ### If You Need Sculpin
 
-    curl -sS https://sculpin.io/installer | php
+    curl -O https://download.sculpin.io/sculpin.phar
     php sculpin.phar install
     php sculpin.phar generate --watch --server
 
