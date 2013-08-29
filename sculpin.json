@@ -23,10 +23,8 @@
         "components/highlightjs": "~7.3.0",
 
         "composer/composer": "@dev",
-        "dflydev/embedded-composer": "@dev",
-        "symfony/console": "@dev",
-        "symfony/debug": "@dev",
-        "symfony/http-kernel": "@dev"
+        "dflydev/embedded-composer-core": "@dev",
+        "dflydev/embedded-composer-console": "@dev"
     },
     "config": {
         "component-dir": "source/components"
