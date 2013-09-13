@@ -31,6 +31,9 @@ Here you go!
 
 You can also use [fenced code blocks][fcb] with a syntax declaration at the top.
 The markers are `~` instead of <code>`</code>.
+
+[fcb]: http://michelf.ca/projects/php-markdown/extra/#fenced-code-blocks
+
 ~~~php
 if ($fencedCodeBlock->syntax !== 'PHP') {
     throw new UnexpectedValueException("wat");
