@@ -29,5 +29,12 @@ Here you go!
         }
     }
 
+You can also use [fenced code blocks][fcb] with a syntax declaration at the top.
+The markers are `~` instead of <code>`</code>.
+~~~php
+if ($fencedCodeBlock->syntax !== 'PHP') {
+    throw new UnexpectedValueException("wat");
+}
+~~~
 Like this addition to the skeleton? You can thank for [@Pawka](https://github.com/Pawka)
 for suggesting it. :)
