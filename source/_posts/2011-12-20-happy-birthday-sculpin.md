@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Happy Birthday Sculpin!
 tags:
     - sculpin

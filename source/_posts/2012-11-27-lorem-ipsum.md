@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Lorem Ipsum
 categories:
     - testing

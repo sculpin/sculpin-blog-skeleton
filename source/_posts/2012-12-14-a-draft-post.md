@@ -1,5 +1,4 @@
 ---
-layout: post
 title: This is a draft!
 draft: true
 categories:

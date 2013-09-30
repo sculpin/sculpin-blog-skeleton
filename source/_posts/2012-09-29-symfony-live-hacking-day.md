@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Symfony Live Hacking Day!
 tags: [sensio, symfony, symfony live]
 categories: [personal]
