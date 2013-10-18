@@ -11,7 +11,7 @@
             <p class="categories">
             Categories:
             {% for category in page.categories %}
-            <a href="{{ site.url }}/blog/categories/{{ category }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
             </p>
         {% endif %}
@@ -19,7 +19,7 @@
             <p class="tags">
             Tags:
             {% for tag in page.tags %}
-            <a href="{{ site.url }}/blog/tags/{{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
             </p>
         {% endif %}

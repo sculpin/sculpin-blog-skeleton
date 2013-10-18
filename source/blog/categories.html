@@ -8,6 +8,6 @@ use:
 
 <div>
 {% for category,posts in data.posts_categories %}
-<a href="{{ site.url }}/blog/categories/{{ category }}">{{ category }}</a>
+<a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>
 {% endfor %}
 </div>
