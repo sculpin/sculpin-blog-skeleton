@@ -105,7 +105,7 @@ is the location of your production build.
 
     sculpin generate --env=prod
 
-These files are suitable to be transfered directly to a production host. For example:
+These files are suitable to be transferred directly to a production host. For example:
 
     sculpin generate --env=prod
     rsync -avze 'ssh -p 999' output_prod/ user@yoursculpinsite.com:public_html
