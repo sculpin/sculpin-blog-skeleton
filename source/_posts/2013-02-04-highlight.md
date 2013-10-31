@@ -14,7 +14,7 @@ Here you go!
     /**
      * Awesome Contrived Example.
      */
-    class Bar impliments BarInterface
+    class Bar implements BarInterface
     {
         private $baz;
 
