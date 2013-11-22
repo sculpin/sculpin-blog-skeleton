@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d09e890f71617242e11482778c2b69d8",
+    "hash": "d223756c62cdbdbb6b0ead98dac1cfb4",
     "packages": [
         {
             "name": "components/bootstrap",
@@ -223,16 +223,16 @@
         },
         {
             "name": "robloach/component-installer",
-            "version": "0.0.11",
+            "version": "0.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobLoach/component-installer.git",
-                "reference": "f8bbde8d027eed4d9bcc09ebc2d04d9e0df94b5b"
+                "reference": "1864f25db21fc173e02a359f646acd596c1b0460"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/f8bbde8d027eed4d9bcc09ebc2d04d9e0df94b5b",
-                "reference": "f8bbde8d027eed4d9bcc09ebc2d04d9e0df94b5b",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/1864f25db21fc173e02a359f646acd596c1b0460",
+                "reference": "1864f25db21fc173e02a359f646acd596c1b0460",
                 "shasum": ""
             },
             "require": {
@@ -263,7 +263,7 @@
                 }
             ],
             "description": "Allows installation of Components via Composer.",
-            "time": "2013-05-10 04:14:46"
+            "time": "2013-08-31 23:46:48"
         }
     ],
     "packages-dev": [
@@ -273,12 +273,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "sculpin/sculpin": 20,
-        "composer/composer": 20,
-        "dflydev/embedded-composer-core": 20,
-        "dflydev/embedded-composer-console": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],

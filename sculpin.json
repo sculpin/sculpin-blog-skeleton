@@ -16,15 +16,9 @@
         }
     ],
     "require": {
-        "sculpin/sculpin": "2.*@dev",
-
         "components/bootstrap": "~2.3.1",
         "components/jquery": "~1.9.1",
-        "components/highlightjs": "~7.3.0",
-
-        "composer/composer": "@dev",
-        "dflydev/embedded-composer-core": "@dev",
-        "dflydev/embedded-composer-console": "@dev"
+        "components/highlightjs": "~7.3.0"
     },
     "config": {
         "component-dir": "source/components"
