@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% spaceless %}
 <html>
     <head>
         <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
@@ -86,3 +87,4 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>
+{% endspaceless %}
