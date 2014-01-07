@@ -7,7 +7,7 @@ permalink: atom.xml
     <title><![CDATA[{{ site.title }}]]></title>
     <link href="{{ site.url }}/atom.xml" rel="self"/>
     <link href="{{ site.url }}/"/>
-    <updated>{{ site.calculated_date | date('Y-m-d') }}</updated>
+    <updated>{{ site.calculated_date | date('c') }}</updated>
     <id>{{ site.url }}/</id>
     {% if site.author or site.email %}
         <author>
