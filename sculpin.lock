@@ -3,24 +3,24 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d223756c62cdbdbb6b0ead98dac1cfb4",
+    "hash": "7a5bd8afd2f004f54943918072be2a8d",
     "packages": [
         {
             "name": "components/bootstrap",
-            "version": "2.3.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/bootstrap.git",
-                "reference": "4e517c991623b3bd913e2becd44831b2c9b0be90"
+                "reference": "ed686e60f966ba415e34f8825fad454993afac4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/4e517c991623b3bd913e2becd44831b2c9b0be90",
-                "reference": "4e517c991623b3bd913e2becd44831b2c9b0be90",
+                "url": "https://api.github.com/repos/components/bootstrap/zipball/ed686e60f966ba415e34f8825fad454993afac4b",
+                "reference": "ed686e60f966ba415e34f8825fad454993afac4b",
                 "shasum": ""
             },
             "require": {
-                "components/jquery": "*"
+                "components/jquery": ">=1.9"
             },
             "suggest": {
                 "components/bootstrap-default": "Provide a theme for Bootstrap as components/bootstrap only provides the CSS as file assets"
@@ -34,7 +34,8 @@
                     "files": [
                         "js/bootstrap.min.js",
                         "css/*.css",
-                        "img/*.png"
+                        "fonts/*",
+                        "less/*"
                     ],
                     "shim": {
                         "deps": [
@@ -58,7 +59,47 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-07-18 20:01:48"
+            "time": "2013-12-08 11:53:27"
+        },
+        {
+            "name": "components/font-awesome",
+            "version": "4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/font-awesome.git",
+                "reference": "1744fe47e16f15749b07d31d40c9ae66b57df307"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/font-awesome/zipball/1744fe47e16f15749b07d31d40c9ae66b57df307",
+                "reference": "1744fe47e16f15749b07d31d40c9ae66b57df307",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "*"
+            },
+            "type": "component",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                },
+                "component": {
+                    "styles": [
+                        "css/font-awesome.css"
+                    ],
+                    "files": [
+                        "css/font-awesome.min.css",
+                        "fonts/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "OFL-1.1"
+            ],
+            "description": "The iconic font designed for use with Twitter Bootstrap.",
+            "time": "2013-11-10 21:30:36"
         },
         {
             "name": "components/highlightjs",
@@ -264,6 +305,28 @@
             ],
             "description": "Allows installation of Components via Composer.",
             "time": "2013-08-31 23:46:48"
+        },
+        {
+            "name": "sculpin/bootstrap-3-blog-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sculpin/bootstrap-3-blog-theme.git",
+                "reference": "d72a217f69e1280ccbb8788eb58e07f66cf129d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sculpin/bootstrap-3-blog-theme/zipball/d72a217f69e1280ccbb8788eb58e07f66cf129d1",
+                "reference": "d72a217f69e1280ccbb8788eb58e07f66cf129d1",
+                "shasum": ""
+            },
+            "type": "sculpin-theme",
+            "description": "A Bootstrap 3 Blog Theme for Sculpin",
+            "support": {
+                "source": "https://github.com/sculpin/bootstrap-3-blog-theme/tree/master",
+                "issues": "https://github.com/sculpin/bootstrap-3-blog-theme/issues"
+            },
+            "time": "2014-01-14 07:08:51"
         }
     ],
     "packages-dev": [
@@ -273,9 +336,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "sculpin/bootstrap-3-blog-theme": 20
+    },
     "platform": [
 
     ],
