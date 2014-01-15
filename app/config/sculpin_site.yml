@@ -3,3 +3,7 @@
 # in a template to get the contents of the `title` key.
 title: Sculpin Blog Skeleton
 subtitle: To Get You Started
+after_footer_includes:
+    - addons/highlightjs/after_footer
+head_includes:
+    - addons/highlightjs/head

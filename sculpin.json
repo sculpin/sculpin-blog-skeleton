@@ -22,9 +22,6 @@
         }
     ],
     "require": {
-        "components/bootstrap": "3.0.3",
-        "components/font-awesome": "4.0.3",
-        "components/jquery": "1.9.1",
         "components/highlightjs": "~7.3.0",
 
         "sculpin/bootstrap-3-blog-theme": "dev-master"

@@ -3,104 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7a5bd8afd2f004f54943918072be2a8d",
+    "hash": "372bea12ec5a0de13381726376522b9d",
     "packages": [
-        {
-            "name": "components/bootstrap",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/bootstrap.git",
-                "reference": "ed686e60f966ba415e34f8825fad454993afac4b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/ed686e60f966ba415e34f8825fad454993afac4b",
-                "reference": "ed686e60f966ba415e34f8825fad454993afac4b",
-                "shasum": ""
-            },
-            "require": {
-                "components/jquery": ">=1.9"
-            },
-            "suggest": {
-                "components/bootstrap-default": "Provide a theme for Bootstrap as components/bootstrap only provides the CSS as file assets"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/bootstrap.js"
-                    ],
-                    "files": [
-                        "js/bootstrap.min.js",
-                        "css/*.css",
-                        "fonts/*",
-                        "less/*"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "jquery"
-                        ]
-                    }
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Twitter, Inc"
-                }
-            ],
-            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "http://twitter.github.com/bootstrap/",
-            "keywords": [
-                "bootstrap",
-                "css"
-            ],
-            "time": "2013-12-08 11:53:27"
-        },
-        {
-            "name": "components/font-awesome",
-            "version": "4.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/font-awesome.git",
-                "reference": "1744fe47e16f15749b07d31d40c9ae66b57df307"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/font-awesome/zipball/1744fe47e16f15749b07d31d40c9ae66b57df307",
-                "reference": "1744fe47e16f15749b07d31d40c9ae66b57df307",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0.x-dev"
-                },
-                "component": {
-                    "styles": [
-                        "css/font-awesome.css"
-                    ],
-                    "files": [
-                        "css/font-awesome.min.css",
-                        "fonts/*"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT",
-                "OFL-1.1"
-            ],
-            "description": "The iconic font designed for use with Twitter Bootstrap.",
-            "time": "2013-11-10 21:30:36"
-        },
         {
             "name": "components/highlightjs",
             "version": "7.3.0",
@@ -145,51 +49,6 @@
             ],
             "description": "Highlight.js highlights syntax in code examples on blogs, forums and in fact on any web pages.",
             "time": "2013-04-24 15:11:49"
-        },
-        {
-            "name": "components/jquery",
-            "version": "1.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/jquery.git",
-                "reference": "0e94233e6a4ab678d8fc04312241b2f840717b0c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/jquery/zipball/0e94233e6a4ab678d8fc04312241b2f840717b0c",
-                "reference": "0e94233e6a4ab678d8fc04312241b2f840717b0c",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "jquery.js"
-                    ],
-                    "files": [
-                        "jquery.min.js",
-                        "jquery-migrate.js",
-                        "jquery-migrate.min.js"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "John Resig",
-                    "email": "jeresig@gmail.com",
-                    "homepage": "http://ejohn.org/"
-                }
-            ],
-            "description": "jQuery JavaScript Library",
-            "homepage": "http://jquery.com",
-            "time": "2013-07-16 10:41:05"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -312,12 +171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/bootstrap-3-blog-theme.git",
-                "reference": "d72a217f69e1280ccbb8788eb58e07f66cf129d1"
+                "reference": "efac4789f4dfc4e806dd548e76a34c4ee4447b2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sculpin/bootstrap-3-blog-theme/zipball/d72a217f69e1280ccbb8788eb58e07f66cf129d1",
-                "reference": "d72a217f69e1280ccbb8788eb58e07f66cf129d1",
+                "url": "https://api.github.com/repos/sculpin/bootstrap-3-blog-theme/zipball/efac4789f4dfc4e806dd548e76a34c4ee4447b2e",
+                "reference": "efac4789f4dfc4e806dd548e76a34c4ee4447b2e",
                 "shasum": ""
             },
             "type": "sculpin-theme",
@@ -326,7 +185,7 @@
                 "source": "https://github.com/sculpin/bootstrap-3-blog-theme/tree/master",
                 "issues": "https://github.com/sculpin/bootstrap-3-blog-theme/issues"
             },
-            "time": "2014-01-14 07:08:51"
+            "time": "2014-01-15 01:03:06"
         }
     ],
     "packages-dev": [
