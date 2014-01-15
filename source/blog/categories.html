@@ -4,10 +4,4 @@ title: Categories
 use:
     - posts_categories
 ---
-<h1>Categories</h1>
-
-<div>
-{% for category,posts in data.posts_categories %}
-<a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>
-{% endfor %}
-</div>
+{% include "blog_taxonomy_index" with {header: page.title, taxonomy: data.posts_categories, url_segment: "blog/categories"} %}

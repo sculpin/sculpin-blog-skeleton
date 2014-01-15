@@ -22,11 +22,6 @@
         }
     ],
     "require": {
-        "components/highlightjs": "~7.3.0",
-
         "sculpin/bootstrap-3-blog-theme": "dev-master"
-    },
-    "config": {
-        "component-dir": "source/components"
     }
 }

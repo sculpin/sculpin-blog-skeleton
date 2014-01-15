@@ -4,5 +4,5 @@ title: Tag Archive
 generator: posts_category_index
 
 ---
-{% set header %}"{{ page.category }}" Category{% endset %}
+{% set header %}Category: {{ page.category }}{% endset %}
 {% include "blog_archives" with {posts: page.category_posts} %}
