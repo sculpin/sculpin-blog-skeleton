@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/bootstrap-3-blog-theme.git",
-                "reference": "a3cbc97865384d11d331f4bda508c9951ad1ba04"
+                "reference": "63d2c12172bfabe0d3231c87d1339698551ab0f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sculpin/bootstrap-3-blog-theme/zipball/a3cbc97865384d11d331f4bda508c9951ad1ba04",
-                "reference": "a3cbc97865384d11d331f4bda508c9951ad1ba04",
+                "url": "https://api.github.com/repos/sculpin/bootstrap-3-blog-theme/zipball/63d2c12172bfabe0d3231c87d1339698551ab0f2",
+                "reference": "63d2c12172bfabe0d3231c87d1339698551ab0f2",
                 "shasum": ""
             },
             "type": "sculpin-theme",
@@ -25,7 +25,7 @@
                 "source": "https://github.com/sculpin/bootstrap-3-blog-theme/tree/master",
                 "issues": "https://github.com/sculpin/bootstrap-3-blog-theme/issues"
             },
-            "time": "2014-01-15 03:23:22"
+            "time": "2014-01-16 06:29:42"
         }
     ],
     "packages-dev": [
