@@ -1,3 +1,7 @@
+---
+permalink: none
+---
+
 User-agent: *
 Disallow: /blog/tags/
 Disallow: /blog/categories/
