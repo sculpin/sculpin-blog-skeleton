@@ -3,3 +3,6 @@
 # in a template to get the contents of the `title` key.
 title: Sculpin Blog Skeleton
 subtitle: To Get You Started
+
+# Insert your disqus shortname
+# disqus_shortname:
