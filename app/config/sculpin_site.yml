@@ -5,4 +5,5 @@ title: Sculpin Blog Skeleton
 subtitle: To Get You Started
 
 # Insert your disqus shortname
-# disqus_shortname:
+#disqus:
+#    shortname:
