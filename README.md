@@ -108,7 +108,7 @@ is the location of your production build.
 These files are suitable to be transferred directly to a production host. For example:
 
     sculpin generate --env=prod
-    rsync -avze 'ssh -p 999' output_prod/ user@yoursculpinsite.com:public_html
+    rsync -avze 'ssh -p 999' --delete output_prod/ user@yoursculpinsite.com:public_html
 
 In fact, `publish.sh` is provided to get you started. If you plan on deploying to an
 Amazon S3 bucket, you can use `s3-publish.sh` alongside the `s3cmd` utility (must be
