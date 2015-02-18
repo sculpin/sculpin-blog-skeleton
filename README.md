@@ -108,6 +108,10 @@ is the location of your production build.
 These files are suitable to be transferred directly to a production host. For example:
 
     sculpin generate --env=prod
+    rsync -avze 'ssh -p 999' output_prod/ user@yoursculpinsite.com:public_html
+
+If you want to make sure that rsync deletes files that you deleted locally on the on the remote too, add the `--delete` option to the rsync command:
+
     rsync -avze 'ssh -p 999' --delete output_prod/ user@yoursculpinsite.com:public_html
 
 In fact, `publish.sh` is provided to get you started. If you plan on deploying to an
