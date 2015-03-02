@@ -29,7 +29,7 @@ Here you go!
     }
 
 You can also use [fenced code blocks][fcb] with a syntax declaration at the top.
-The markers are `~` instead of <code>`</code>.
+You can use either `~` or <code>`</code> to mark them.
 
 [fcb]: http://michelf.ca/projects/php-markdown/extra/#fenced-code-blocks
 
