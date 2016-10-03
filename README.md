@@ -29,20 +29,18 @@ A very basic Sculpin based blog supporting the following features:
 Build
 -----
 
-### If You Already Have Sculpin
+### If You Need Composer
 
-    sculpin install
-    sculpin generate --watch --server
+Head to https://getcomposer.org/download/ and follow the instructions
+to grab the latest version.
+
+### Once You Have Composer
+
+    composer install
+    vendor/bin/sculpin generate --watch --server
 
 Your newly generated clone of sculpin-blog-skeleton is now
 accessible at `http://localhost:8000/`.
-
-### If You Need Sculpin
-
-    curl -O https://download.sculpin.io/sculpin.phar
-    php sculpin.phar install
-    php sculpin.phar generate --watch --server
-
 
 Previewing Development Builds
 -----------------------------
@@ -60,26 +58,26 @@ commands. This will start a simple webserver listening at `localhost:8000`.
 To serve files right after generating them, use the `generate` command with
 the `--server` option:
 
-    sculpin generate --server
+    vendor/bin/sculpin generate --server
 
 To listen on a different port, specify the `--port` option:
 
-    sculpin generate --server --port=9999
+    vendor/bin/sculpin generate --server --port=9999
 
 Combine with `--watch` to have Sculpin pick up changes as you make them:
 
-    sculpin generate --server --watch
+    vendor/bin/sculpin generate --server --watch
 
 
 ##### Server Command
 
 To serve files that have already been generated, use the `serve` command:
 
-    sculpin serve
+    vendor/bin/sculpin serve
 
 To listen on a different port, specify the `--port` option:
 
-    sculpin serve --port=9999
+    vendor/bin/sculpin serve --port=9999
 
 
 ### Using a Standard Webserver
@@ -91,7 +89,7 @@ the path at which the site is installed.
 This can be solved by overriding the `site.url` configuration option when
 generating the site.
 
-    sculpin generate --url=http://my.dev.host/blog-skeleton/output_dev
+    vendor/bin/sculpin generate --url=http://my.dev.host/blog-skeleton/output_dev
 
 With this option passed, `{{ site.url }}/about` will now be generated as
 `http://my.dev.host/blog-skelton/output_dev/about` instead of `/about`.
@@ -103,11 +101,11 @@ Publishing Production Builds
 When `--env=prod` is specified, the site will be generated in `output_prod/`. This
 is the location of your production build.
 
-    sculpin generate --env=prod
+    vendor/bin/sculpin generate --env=prod
 
 These files are suitable to be transferred directly to a production host. For example:
 
-    sculpin generate --env=prod
+    vendor/bin/sculpin generate --env=prod
     rsync -avze 'ssh -p 999' output_prod/ user@yoursculpinsite.com:public_html
 
 If you want to make sure that rsync deletes files that you deleted locally on the on the remote too, add the `--delete` option to the rsync command:
