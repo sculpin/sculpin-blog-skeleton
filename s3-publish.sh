@@ -11,7 +11,7 @@ fi
 
 if [ ! -z "$1" -a "$1" != "--dry-run" -a "$1" != "-n" ]
 then
-    echo "Usage: ./publish.sh [--dry-run|-n]"
+    echo "Usage: ./s3-publish.sh [--dry-run|-n]"
     exit 2
 fi
 
