@@ -25,23 +25,20 @@ A very basic Sculpin based blog supporting the following features:
  * A blog tag index at `/blog/tags/$tag`. Similar to the blog archive
    except broken down by each tag.
 
+Install
+-------
+
+```bash
+$ composer install
+```
 
 Build
 -----
 
-### If You Already Have Sculpin
-
-    sculpin install
-    sculpin generate --watch --server
+    php vendor/bin/sculpin generate --watch --server
 
 Your newly generated clone of sculpin-blog-skeleton is now
 accessible at `http://localhost:8000/`.
-
-### If You Need Sculpin
-
-    curl -O https://download.sculpin.io/sculpin.phar
-    php sculpin.phar install
-    php sculpin.phar generate --watch --server
 
 
 Previewing Development Builds
@@ -60,26 +57,26 @@ commands. This will start a simple webserver listening at `localhost:8000`.
 To serve files right after generating them, use the `generate` command with
 the `--server` option:
 
-    sculpin generate --server
+    php vendor/bin/sculpin generate --server
 
 To listen on a different port, specify the `--port` option:
 
-    sculpin generate --server --port=9999
+    php vendor/bin/sculpin generate --server --port=9999
 
 Combine with `--watch` to have Sculpin pick up changes as you make them:
 
-    sculpin generate --server --watch
+    php vendor/bin/sculpin generate --server --watch
 
 
 ##### Server Command
 
 To serve files that have already been generated, use the `serve` command:
 
-    sculpin serve
+    php vendor/bin/sculpin serve
 
 To listen on a different port, specify the `--port` option:
 
-    sculpin serve --port=9999
+    php vendor/bin/sculpin serve --port=9999
 
 
 ### Using a Standard Webserver
@@ -103,11 +100,11 @@ Publishing Production Builds
 When `--env=prod` is specified, the site will be generated in `output_prod/`. This
 is the location of your production build.
 
-    sculpin generate --env=prod
+    php vendor/bin/sculpin generate --env=prod
 
 These files are suitable to be transferred directly to a production host. For example:
 
-    sculpin generate --env=prod
+    php vendor/bin/sculpin generate --env=prod
     rsync -avze 'ssh -p 999' output_prod/ user@yoursculpinsite.com:public_html
 
 If you want to make sure that rsync deletes files that you deleted locally on the on the remote too, add the `--delete` option to the rsync command:
