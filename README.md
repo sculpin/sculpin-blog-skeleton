@@ -40,6 +40,25 @@ Build
 Your newly generated clone of sculpin-blog-skeleton is now
 accessible at `http://localhost:8000/`.
 
+Component Management
+--------------------
+If you wish to install components via composer and have them automatically installed into your source directory you will need the following configuration options to your composer.json file.
+
+- component-dir: The directory you wish the components to be installed
+- components: An array of component names to be installed
+
+```
+"config": {
+    "component-dir": "source/components",
+    "components": [
+        "components/bootstrap",
+        "components/jquery",
+        "components/highlightjs"
+    ]
+}
+``` 
+
+The component manager will introspect these values to determine what it needs to copy into your source directory on `composer install`.
 
 Previewing Development Builds
 -----------------------------
