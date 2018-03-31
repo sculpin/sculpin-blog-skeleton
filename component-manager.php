@@ -6,7 +6,7 @@ use Symfony\Component\Filesystem\Filesystem;
 
 class ComponentManager
 {
-    public static function postComposerInstall(Event $event)
+    public static function postComposerInstall(Event $event): void
     {
         $config       = $event->getComposer()->getConfig();
         $componentDir = $config->get('component-dir');
@@ -18,7 +18,7 @@ class ComponentManager
             return;
         }
 
-        $componentDir = __DIR__ .'/'. $componentDir;
+        $componentDir = __DIR__ . DIRECTORY_SEPARATOR . $componentDir;
 
         if (!is_dir($componentDir)) {
             mkdir($componentDir);
@@ -27,13 +27,13 @@ class ComponentManager
         $filesystem   = new Filesystem();
 
         foreach ($components as $component) {
-            $componentSource = $vendorDir .'/'. $component;
+            $componentSource = $vendorDir . DIRECTORY_SEPARATOR . $component;
 
             if (!is_dir($componentSource)) {
                 continue;
             }
 
-            $filesystem->mirror($componentSource, $componentDir .'/'. basename($component));
+            $filesystem->mirror($componentSource, $componentDir . DIRECTORY_SEPARATOR . basename($component));
         }
     }
 }
