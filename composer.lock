@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee311e43757fd6184152d00677265bcc",
+    "content-hash": "7f36e463cf17764dbdbfc61f778c6cf5",
     "packages": [
         {
             "name": "components/bootstrap",
@@ -1211,16 +1211,16 @@
         },
         {
             "name": "sculpin/sculpin",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "adee090505192baa44619d6b4fe2ea6527efbe2f"
+                "reference": "517332af76e2c1163c67c993a2a6e7e0e3e7c529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sculpin/sculpin/zipball/adee090505192baa44619d6b4fe2ea6527efbe2f",
-                "reference": "adee090505192baa44619d6b4fe2ea6527efbe2f",
+                "url": "https://api.github.com/repos/sculpin/sculpin/zipball/517332af76e2c1163c67c993a2a6e7e0e3e7c529",
+                "reference": "517332af76e2c1163c67c993a2a6e7e0e3e7c529",
                 "shasum": ""
             },
             "require": {
@@ -1229,9 +1229,10 @@
                 "dflydev/canal": "^1.0",
                 "dflydev/dot-access-configuration": "^1.0.1",
                 "doctrine/inflector": "^1.1",
+                "ext-mbstring": "*",
                 "michelf/php-markdown": "^1.7",
                 "netcarver/textile": "^3.6",
-                "php": "^7.0",
+                "php": "^7.2",
                 "react/http": "^0.6",
                 "sculpin/sculpin-theme-composer-plugin": "^1.0",
                 "symfony/config": "^3.2",
@@ -1273,8 +1274,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev",
-                    "dev-develop": "3.0.x-dev"
+                    "dev-master": "3.0.x-dev",
+                    "dev-develop": "3.1.x-dev"
                 }
             },
             "autoload": {
@@ -1305,7 +1306,7 @@
                 "site",
                 "static"
             ],
-            "time": "2018-02-28T05:44:39+00:00"
+            "time": "2018-03-31T19:11:55+00:00"
         },
         {
             "name": "sculpin/sculpin-theme-composer-plugin",
