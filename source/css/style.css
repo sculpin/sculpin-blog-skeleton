@@ -1,11 +1,9 @@
-h4 small
-{
+small {
     display: block;
-    font-size: 60%;
     color: #888;
 }
 
-.mainContent, footer.container {
+main.container, footer.container {
     max-width: 900px;
 }
 
@@ -20,9 +18,13 @@ footer.container {
         padding-top: 30px;
     }
 }
+
 @media (min-width: 980px) {
     body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
         padding-bottom: 40px;
     }
+}
+
+body > main.container {
+    padding: 80px 15px 0; /* 80px to make the container go all the way to the bottom of the topbar */
 }
