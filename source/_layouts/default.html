@@ -72,10 +72,10 @@
         </header>
         <div class="mainContent container">
             <div class="row-fluid">
-                <div class="span8">
+                <div class="col-xs-8">
                     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
                 </div>
-                <div class="span4 sidebar">
+                <div class="col-xs-4 sidebar">
                     <div class="well">
                         <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
                     </div>
