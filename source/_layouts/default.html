@@ -8,30 +8,28 @@
         {% block head_meta %}
             <meta name="robots" content="noindex, follow">
         {% endblock %}
-        <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ site.url }}/build/app.css">
 
-        <link rel="apple-touch-startup-image" href="{{ site.url }}/images/jackson/2048x2048.png">
+        <link rel="apple-touch-startup-image" href="{{ site.url }}/build/2048x2048.png">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="shortcut icon" sizes="76x76" href="{{ site.url }}/images/jackson/76x76.png">
-        <link rel="shortcut icon" sizes="120x120" href="{{ site.url }}/images/jackson/120x120.png">
-        <link rel="shortcut icon" sizes="128x128" href="{{ site.url }}/images/jackson/128x128.png">
-        <link rel="shortcut icon" sizes="152x152" href="{{ site.url }}/images/jackson/152x152.png">
-        <link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/images/jackson/196x196.png">
-        <link rel="shortcut icon" sizes="512x512" href="{{ site.url }}/images/jackson/512x512.png">
-        <link rel="shortcut icon" sizes="1024x1024" href="{{ site.url }}/images/jackson/1024x1024.png">
-        <link rel="shortcut icon" sizes="2048x2048" href="{{ site.url }}/images/jackson/2048x2048.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/images/jackson/76x76.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/images/jackson/120x120.png">
-        <link rel="apple-touch-icon" sizes="128x128" href="{{ site.url }}/images/jackson/128x128.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/images/jackson/152x152.png">
-        <link rel="apple-touch-icon" sizes="196x196" href="{{ site.url }}/images/jackson/196x196.png">
-        <link rel="apple-touch-icon" sizes="512x512" href="{{ site.url }}/images/jackson/512x512.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="{{ site.url }}/images/jackson/1024x1024.png">
-        <link rel="apple-touch-icon" sizes="2048x2048" href="{{ site.url }}/images/jackson/2048x2048.png">
+        <link rel="shortcut icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png">
+        <link rel="shortcut icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png">
+        <link rel="shortcut icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png">
+        <link rel="shortcut icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png">
+        <link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png">
+        <link rel="shortcut icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png">
+        <link rel="shortcut icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png">
+        <link rel="shortcut icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png">
+        <link rel="apple-touch-icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png">
+        <link rel="apple-touch-icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png">
+        <link rel="apple-touch-icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png">
+        <link rel="apple-touch-icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png">
 
-        <link rel="stylesheet" href="{{ site.url }}/components/highlightjs/styles/github.css" />
         <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
         {% block head_styles %}
         {% endblock %}
@@ -85,9 +83,7 @@
             <span class="text-muted">&copy; {{ "now"|date("Y") }} {{ site.title }}</span>
         </footer>
 
-        <script src="{{ site.url }}/components/jquery/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="{{ site.url }}/components/bootstrap/js/bootstrap.min.js"></script>
+        <script src="{{ site.url }}/build/app.js"></script>
         {% block scripts %}
         {% endblock %}
 
@@ -103,8 +99,6 @@
             ga('send', 'pageview');
         </script>
         {% endif %}
-        <script src="{{ site.url }}/components/highlightjs/highlight.pack.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
 
         {% block scripts_after %}
         {% endblock %}

@@ -28,6 +28,15 @@ A very basic Sculpin based blog supporting the following features:
 Install
 -------
 
+This application uses [Symfony's Webpack Encore](https://symfony.com/doc/current/frontend.html)
+to manage CSS, JavaScript and image assets. First install the JS dependencies:
+
+```bash
+$ yarn install
+```
+
+Then install the PHP dependencies (Sculpin):
+
 ```bash
 $ composer install
 ```
@@ -35,10 +44,21 @@ $ composer install
 Build
 -----
 
-    php vendor/bin/sculpin generate --watch --server
+First run Encore, to compile the assets in `source/assets/` into `source/build/`:
+
+```bash
+$ yarn encore dev --watch
+```
+
+Then generate the site with Sculpin:
+
+```bash
+$ php vendor/bin/sculpin generate --watch --server
+```
 
 Your newly generated clone of sculpin-blog-skeleton is now
 accessible at `http://localhost:8000/`.
+
 
 Previewing Development Builds
 -----------------------------
