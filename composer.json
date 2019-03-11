@@ -16,28 +16,6 @@
         }
     ],
     "require": {
-        "sculpin/sculpin": "^3.0@dev",
-        "components/bootstrap": "^4.1",
-        "components/jquery": "^3.1",
-        "components/highlightjs": "^9.7"
-    },
-    "config": {
-        "component-dir": "source/components",
-        "components": [
-            "components/bootstrap",
-            "components/jquery",
-            "components/highlightjs"
-        ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "ComponentManager\\ComponentManager::postComposerInstall"
-        ],
-        "post-update-cmd": [
-            "ComponentManager\\ComponentManager::postComposerInstall"
-        ]
-    },
-    "autoload": {
-        "classmap": ["component-manager.php"]
+        "sculpin/sculpin": "^3.0@dev"
     }
 }
