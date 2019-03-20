@@ -28,6 +28,15 @@ A very basic Sculpin based blog supporting the following features:
 Install
 -------
 
+This application uses [Symfony's Webpack Encore](https://symfony.com/doc/current/frontend.html)
+to manage CSS, JavaScript and image assets. First install the JS dependencies:
+
+```bash
+$ yarn install
+```
+
+Then install the PHP dependencies (Sculpin):
+
 ```bash
 $ composer install
 ```
@@ -35,30 +44,21 @@ $ composer install
 Build
 -----
 
-    php vendor/bin/sculpin generate --watch --server
+First run Encore, to compile the assets in `source/assets/` into `source/build/`:
+
+```bash
+$ yarn encore dev --watch
+```
+
+Then generate the site with Sculpin:
+
+```bash
+$ php vendor/bin/sculpin generate --watch --server
+```
 
 Your newly generated clone of sculpin-blog-skeleton is now
 accessible at `http://localhost:8000/`.
 
-Component Management
---------------------
-If you wish to install components via composer and have them automatically installed into your source directory you will need the following configuration options to your composer.json file.
-
-- component-dir: The directory you wish the components to be installed
-- components: An array of component names to be installed
-
-```
-"config": {
-    "component-dir": "source/components",
-    "components": [
-        "components/bootstrap",
-        "components/jquery",
-        "components/highlightjs"
-    ]
-}
-``` 
-
-The component manager will introspect these values to determine what it needs to copy into your source directory on `composer install`.
 
 Previewing Development Builds
 -----------------------------
