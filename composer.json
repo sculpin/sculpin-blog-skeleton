@@ -16,36 +16,17 @@
         }
     ],
     "require": {
-      "php": ">7.2",
-      "sculpin/sculpin": "dev-master",
-      "kriswallsmith/assetic": "1.4.0",
-      "components/bootstrap": "^3.3",
-      "components/jquery": "^3.1",
-      "components/highlightjs": "^9.7"
-    },
-    "config": {
-        "component-dir": "source/components",
-        "components": [
-            "components/bootstrap",
-            "components/jquery",
-            "components/highlightjs"
-        ]
+        "sculpin/sculpin": "^3.0@dev"
     },
     "scripts": {
-        "post-install-cmd": [
-            "ComponentManager\\ComponentManager::postComposerInstall"
-        ],
-        "post-update-cmd": [
-            "ComponentManager\\ComponentManager::postComposerInstall"
-        ],
         "publish": [
             "./publish.sh"
         ],
         "watch": [
             "./vendor/bin/sculpin generate --watch --server"
+        ],
+        "watch": [
+            "./vendor/bin/sculpin generate --watch --server"
         ]
-    },
-    "autoload": {
-        "classmap": ["./component-manager.php"]
     }
 }
