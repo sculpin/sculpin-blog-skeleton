@@ -22,11 +22,11 @@
         "publish": [
             "./publish.sh"
         ],
-        "watch": [
+        "sculpin-watch": [
             "./vendor/bin/sculpin generate --watch --server"
         ],
-        "watch": [
-            "./vendor/bin/sculpin generate --watch --server"
+        "yarn-watch": [
+            "yarn encore dev --watch"
         ]
     }
 }

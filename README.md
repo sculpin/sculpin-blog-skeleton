@@ -44,21 +44,22 @@ $ composer install
 Build
 -----
 
-First run Encore, to compile the assets in `source/assets/` into `source/build/`:
+First, start Encore to compile and update the assets in `source/assets/` into
+`source/build/`. The watcher keeps running until you abort it manually:
 
 ```bash
-$ yarn encore dev --watch
+$ composer yarn-watch
 ```
 
-Then generate the site with Sculpin:
+In a new console, start the sculpin watcher to have your content updated as
+soon as you save changes:
 
 ```bash
-$ php vendor/bin/sculpin generate --watch --server
+$ composer sculpin-watch
 ```
 
 Your newly generated clone of sculpin-blog-skeleton is now
 accessible at `http://localhost:8000/`.
-
 
 Previewing Development Builds
 -----------------------------
