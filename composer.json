@@ -17,5 +17,16 @@
     ],
     "require": {
         "sculpin/sculpin": "^3.0@dev"
+    },
+    "scripts": {
+        "publish": [
+            "./publish.sh"
+        ],
+        "sculpin-watch": [
+            "./vendor/bin/sculpin generate --watch --server"
+        ],
+        "yarn-watch": [
+            "yarn encore dev --watch"
+        ]
     }
 }

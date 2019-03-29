@@ -55,30 +55,29 @@ $ yarn install
 Build
 -----
 
-Run Encore to compile the assets from `source/assets/` into `source/build/`:
+First, start Encore to compile and update the assets in `source/assets/` into
+`source/build/`. The watcher keeps running until you exit it manually:
 
 ```bash
-$ yarn encore dev --watch
+$ composer yarn-watch
 ```
 
-With the `--watch` option, yarn will keep running and update the assets
-whenever you change a source asset.
-
-Then create a new console window and generate and serve the site with Sculpin:
+In a new console, start the sculpin watcher to have your content updated as
+soon as you save changes:
 
 ```bash
-$ php vendor/bin/sculpin generate --watch --server
+$ composer sculpin-watch
 ```
 
-Your newly generated clone of sculpin-blog-skeleton is now
-accessible at `http://localhost:8000/`.
-
-With the `--watch` option, sculpin will keep running and update the HTML
-whenever you change a source document.
+Your newly generated clone of sculpin-blog-skeleton should now be accessible
+at `http://localhost:8000/`.
 
 Documentation
 -------------
 
 The skeleton provides you with useful configuration and some example data for
-a Sculpin installation. Check out the [Get Started page](https://sculpin.io/getstarted/)
-and have a look at the [documentation](https://sculpin.io/documentation/).
+a Sculpin installation.
+
+For more information about getting started with Sculpin, check out the
+[Get Started page](https://sculpin.io/getstarted/) and have a look at the full
+[documentation](https://sculpin.io/documentation/).
