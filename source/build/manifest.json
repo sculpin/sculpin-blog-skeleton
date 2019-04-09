@@ -1,0 +1,12 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/jackson/1024x1024.png": "/build/jackson/1024x1024.png",
+  "build/jackson/120x120.png": "/build/jackson/120x120.png",
+  "build/jackson/128x128.png": "/build/jackson/128x128.png",
+  "build/jackson/152x152.png": "/build/jackson/152x152.png",
+  "build/jackson/196x196.png": "/build/jackson/196x196.png",
+  "build/jackson/2048x2048.png": "/build/jackson/2048x2048.png",
+  "build/jackson/512x512.png": "/build/jackson/512x512.png",
+  "build/jackson/76x76.png": "/build/jackson/76x76.png"
+}
