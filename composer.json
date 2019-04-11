@@ -16,16 +16,18 @@
         }
     ],
     "require": {
-        "sculpin/sculpin": "^3.0@dev"
+        "sculpin/sculpin": "^3.0"
     },
     "scripts": {
         "publish": [
             "./publish.sh"
         ],
         "sculpin-watch": [
+            "Composer\\Config::disableProcessTimeout",
             "./vendor/bin/sculpin generate --watch --server"
         ],
         "yarn-watch": [
+            "Composer\\Config::disableProcessTimeout",
             "yarn encore dev --watch"
         ]
     }
