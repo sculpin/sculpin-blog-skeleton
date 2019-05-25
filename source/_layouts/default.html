@@ -1,106 +1,111 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en">
-        <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
-        <meta charset="utf-8">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        {% block head_meta %}
-            <meta name="robots" content="noindex, follow">
-        {% endblock %}
-        <link rel="stylesheet" href="{{ site.url }}/build/app.css">
+<html class="h-full">
+<head>
+    <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% block head_meta %}
+    <meta name="robots" content="noindex, follow">
+    {% endblock %}
+    <link rel="apple-touch-startup-image" href="{{ site.url }}/build/2048x2048.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png">
+    <link rel="shortcut icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png">
+    <link rel="shortcut icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png">
+    <link rel="shortcut icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png">
+    <link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png">
+    <link rel="shortcut icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png">
+    <link rel="shortcut icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png">
+    <link rel="shortcut icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png">
+    <link rel="apple-touch-icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png">
+    <link rel="apple-touch-icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png">
 
-        <link rel="apple-touch-startup-image" href="{{ site.url }}/build/2048x2048.png">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="shortcut icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png">
-        <link rel="shortcut icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png">
-        <link rel="shortcut icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png">
-        <link rel="shortcut icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png">
-        <link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png">
-        <link rel="shortcut icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png">
-        <link rel="shortcut icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png">
-        <link rel="shortcut icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png">
-        <link rel="apple-touch-icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png">
-        <link rel="apple-touch-icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png">
-        <link rel="apple-touch-icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png">
-        <link rel="apple-touch-icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png">
+    <link rel="stylesheet" href="{{ site.url }}/build/css/app.css"/>
 
-        <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
-        {% block head_styles %}
-        {% endblock %}
-        {% block head_scripts %}
-        {% endblock %}
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <div class="container">
-                    <a class="navbar-brand" href="{{ site.url }}/">{{ site.title }}</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item"><a class="nav-link" href="{{ site.url }}/blog">Posts Archive</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ site.url }}/blog/categories">Categories</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ site.url }}/blog/tags">Tags</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ site.url }}/about">About</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main role="main" class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-                </div>
-                <div class="col-sm-4 sidebar">
-                    <div class="card bg-light">
-                        <div class="card-header">{{ site.title }}</div>
-                        <div class="card-body">
-                            {% if site.subtitle %}<small>{{ site.subtitle }}</small>{% endif %}
-                        </div>
-                    </div>
-                    <div class="card bg-light sidebar-nav">
-                        <div class="card-header">Links</div>
-                        <div class="card-body">
-                            <ul class="nav flex-column">
-                                <li class="nav-item"><a class="nav-link" href="http://sculpin.io">sculpin.io</a></li>
-                                <li class="nav-item"><a class="nav-link" href="http://twitter.com/getsculpin">@getsculpin</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="container">
-            <span class="text-muted">&copy; {{ "now"|date("Y") }} {{ site.title }}</span>
-        </footer>
+    <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
 
-        <script src="{{ site.url }}/build/app.js"></script>
-        {% block scripts %}
-        {% endblock %}
+    {% block head_styles %}
+    {% endblock %}
+    {% block head_scripts %}
+    {% endblock %}
+</head>
+<body class="antialiased flex flex-col h-full">
+<nav class="flex items-center justify-between flex-wrap bg-pink-800 p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="/" class="font-black text-xl tracking-tight uppercase">
+            {{ site.title }}
+        </a>
+    </div>
+    <div class="block md:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white navbar-burger">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+    </div>
+    <div id="main-nav" class="w-full block flex-grow md:flex md:items-center md:w-auto hidden md:visible">
+        <div class="text-base md:flex-grow">
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                Posts
+            </a>
+            <a href="/posts/tags/" class="block text-sm mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4 ml-3 md:ml-0">
+                Tags
+            </a>
+            <a href="/posts/category/" class="block text-sm mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4 ml-3 md:ml-0">
+                Categories
+            </a>
+            <a href="/about/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
+                About
+            </a>
+        </div>
+    </div>
+</nav>
 
-        {% if site.google_analytics_tracking_id %}
+<div class="container flex flex-1 md:flex-row flex-col-reverse">
+    <div class="ml-5 md:ml-10 md:mr-5 md:w-1/5 pt-10">
+        <img src="{{ site.url }}/assets/icons/jackson/196x196.png" class="img-flip border-solid rounded-lg border-pink-800 border-2 p-2 shadow-md mx-auto md:mx-0">
+        <strong class="block uppercase mt-10 md:mt-8 mb-2">Contact Info</strong>
+        <a href="" class="block pb-2">twitter.com/username</a>
+        <a href="" class="block pb-2">phpc.social/@username</a>
+        <a href="" class="block pb-2">flickr.com/photos/username</a>
+        <p><strong>Email:</strong> username [at] domain.com</p>
+    </div>
+    <div class="md:ml-5 md:mr-5">
+        {% block content_wrapper %}{% block content '' %}{% endblock content_wrapper %}
+    </div>
+</div>
 
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<footer class="w-full text-right border-t border-gray-400 p-3 pin-b">
+    <a href="{{site.url}}/atom.xml">RSS</a>
+    <span class="pr-2 pl-2">/</span>
+    <span class="opacity-50">Powered by <a href="https://sculpin.io">Sculpin</a></span>
+</footer>
+
+<script type="text/javascript" src="{{ site.url }}/build/js/app.js"></script>
+
+{% block scripts %}
+{% endblock %}
+
+{% if site.google_analytics_tracking_id %}
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
-            ga('send', 'pageview');
-        </script>
-        {% endif %}
+        ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
+        ga('send', 'pageview');
+    </script>
 
-        {% block scripts_after %}
-        {% endblock %}
-    </body>
+{% endif %}
+
+{% block scripts_after %}
+{% endblock %}
+</body>
 </html>

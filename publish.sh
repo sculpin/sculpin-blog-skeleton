@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sculpin generate --env=prod
+vendor/bin/sculpin generate --env=prod
 if [ $? -ne 0 ]; then echo "Could not generate the site"; exit 1; fi
 
 # Add --delete right before "output_prod" to have rsync remove files that are

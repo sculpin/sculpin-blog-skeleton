@@ -3,31 +3,31 @@ layout: default
 title: Home
 generator: pagination
 pagination:
-    max_per_page: 3
+    max_per_page: 4
 use:
-    - posts
+- posts
 ---
+
+<p class="bg-gray-100 p-8 mb-4 font-light italic">Hi, I'm [insert name here]. Thanks for visiting my blog!</p>
+
 {% for post in page.pagination.items %}
-    <article>
+    <article class="pt-6">
         <header>
-            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="font-bold text-xl pb-2 uppercase">
+                <a href="{{ site.url }}{{ post.url }}" class="text-blue-700">{{ post.title }}</a>
+            </h2>
         </header>
         <div>
             {{ post.blocks.content|raw }}
         </div>
+        <p class="published_date pb-1"><strong>Published:</strong> <em>{{page.date|date('F j, Y')}}</em></p>
         {% if post.meta.tags %}
-            <p class="tags">
-            Tags:
+        <p>
+            <strong>Tags:</strong>
             {% for tag in post.meta.tags %}
-            <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/posts/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
-            </p>
+        </p>
         {% endif %}
     </article>
 {% endfor %}
-{% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav>
-        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
-        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
-    </nav>
-{% endif %}
