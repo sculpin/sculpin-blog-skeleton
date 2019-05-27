@@ -39,7 +39,7 @@
 <body class="antialiased flex flex-col h-full">
 <nav class="flex items-center justify-between flex-wrap bg-pink-800 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <a href="/" class="font-black text-xl tracking-tight uppercase">
+        <a href="{{ site.url }}/" class="font-black text-xl tracking-tight uppercase">
             {{ site.title }}
         </a>
     </div>
@@ -50,16 +50,16 @@
     </div>
     <div id="main-nav" class="w-full block flex-grow md:flex md:items-center md:w-auto hidden md:visible">
         <div class="text-base md:flex-grow">
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+            <a href="{{ site.url }}/posts/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
                 Posts
             </a>
-            <a href="/posts/tags/" class="block text-sm mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4 ml-3 md:ml-0">
+            <a href="{{ site.url }}/posts/tags/" class="block text-sm mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4 ml-3 md:ml-0">
                 Tags
             </a>
-            <a href="/posts/category/" class="block text-sm mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4 ml-3 md:ml-0">
+            <a href="{{ site.url }}/posts/category/" class="block text-sm mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4 ml-3 md:ml-0">
                 Categories
             </a>
-            <a href="/about/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
+            <a href="{{ site.url }}/about/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white">
                 About
             </a>
         </div>
@@ -68,7 +68,7 @@
 
 <div class="container flex flex-1 md:flex-row flex-col-reverse">
     <div class="ml-5 md:ml-10 md:mr-5 md:w-1/5 pt-10">
-        <img src="{{ site.url }}/assets/icons/jackson/196x196.png" class="img-flip border-solid rounded-lg border-pink-800 border-2 p-2 shadow-md mx-auto md:mx-0">
+        <img src="{{ site.url }}/build/jackson/196x196.png" class="img-flip border-solid rounded-lg border-pink-800 border-2 p-2 shadow-md mx-auto md:mx-0">
         <strong class="block uppercase mt-10 md:mt-8 mb-2">Contact Info</strong>
         <a href="" class="block pb-2">twitter.com/username</a>
         <a href="" class="block pb-2">phpc.social/@username</a>

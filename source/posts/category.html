@@ -6,7 +6,7 @@ use: [posts_categories]
 <ul>
     {% for category,posts in data.posts_categories|sort|reverse %}
         <li>
-            <a href="/posts/category/{{ category|url_encode(true) }}">{{ category }}</a> ({{posts|length}})
+            <a href="{{ site.url }}/posts/category/{{ category|url_encode(true) }}">{{ category }}</a> ({{posts|length}})
         </li>
     {% endfor %}
 </ul>

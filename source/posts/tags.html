@@ -6,7 +6,7 @@ use: [posts_tags]
 <ul>
     {% for tag,posts in data.posts_tags|sort|reverse %}
         <li>
-            <a href="/posts/tags/{{ tag|url_encode(true) }}">{{ tag }}</a> ({{posts|length}})
+            <a href="{{ site.url }}/posts/tags/{{ tag|url_encode(true) }}">{{ tag }}</a> ({{posts|length}})
         </li>
     {% endfor %}
 </ul>
