@@ -10,19 +10,21 @@ permalink: atom.xml
     <updated>{{ site.calculated_date | date('c') }}</updated>
     <id>{{ site.url }}/</id>
     {% if site.author or site.email %}
-        <author>
-            {% if site.author %}<name><![CDATA[{{ site.author }}]]></name>{% endif %}
-            {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
-        </author>
+    <author>
+        {% if site.author %}<name><![CDATA[{{ site.author }}]]></name>{% endif %}
+        {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+    </author>
+    {% else %}
+    <author><name><![CDATA[{{ site.title }}]]></name></author>
     {% endif %}
     <generator uri="http://sculpin.io/">Sculpin</generator>
     {% for post in data.posts|slice(0, 10) %}
-        <entry>
-            <title type="html"><![CDATA[{{ post.title }}]]></title>
-            <link href="{{ site.url }}{{ post.url }}"/>
-            <updated>{{ post.date|date('c') }}</updated>
-            <id>{{ site.url }}{{ post.url }}</id>
-            <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>
-        </entry>
+    <entry>
+        <title type="html"><![CDATA[{{ post.title }}]]></title>
+        <link href="{{ site.url }}{{ post.url }}"/>
+        <updated>{{ post.date|date('c') }}</updated>
+        <id>{{ site.url }}{{ post.url }}</id>
+        <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>
+    </entry>
     {% endfor %}
 </feed>

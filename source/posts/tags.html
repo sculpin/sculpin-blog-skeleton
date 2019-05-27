@@ -1,0 +1,12 @@
+---
+layout: default
+use: [posts_tags]
+---
+<h1>Tags</h1>
+<ul>
+    {% for tag,posts in data.posts_tags|sort|reverse %}
+        <li>
+            <a href="{{ site.url }}/posts/tags/{{ tag|url_encode(true) }}">{{ tag }}</a> ({{posts|length}})
+        </li>
+    {% endfor %}
+</ul>

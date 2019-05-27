@@ -1,7 +1,3 @@
-require('../css/app.scss');
+require('./nav');
 
-require('jquery')
-require('bootstrap')
-var hljs = require('highlightjs')
-
-hljs.initHighlightingOnLoad();
+// @todo Restore HighlightJS

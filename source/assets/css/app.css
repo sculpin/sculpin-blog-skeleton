@@ -1,0 +1,49 @@
+@tailwind base;
+
+p {
+    @apply pb-4;
+}
+
+a {
+    @apply text-blue-700;
+}
+
+
+a:hover {
+    @apply text-blue-400;
+}
+
+a:visited {
+    @apply text-purple-500;
+}
+
+nav a,
+nav a:hover,
+nav a:visited {
+    @apply text-white;
+}
+
+.img-flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+h1 {
+    @apply font-black text-xl;
+}
+
+ul {
+    @apply list-disc list-inside;
+}
+
+ol {
+    @apply list-decimal list-inside;
+}
+
+@tailwind components;
+
+@tailwind utilities;

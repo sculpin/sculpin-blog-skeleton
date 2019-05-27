@@ -1,13 +1,15 @@
 {
     "name": "sculpin/blog-skeleton",
-    "description": "A Skeleton for a Sculpin Based Blog",
+    "description": "Tailwind-based Skeleton for Sculpin",
     "type": "sculpin-skeleton",
     "license": "MIT",
+    "require": {
+        "sculpin/sculpin": "^3.0"
+    },
     "authors": [
         {
-            "name": "Dragonfly Development Inc.",
-            "email": "info@dflydev.com",
-            "homepage": "http://dflydev.com"
+            "name": "Kevin Boyd",
+            "email": "kevin.boyd@gmail.com"
         },
         {
             "name": "Beau Simensen",
@@ -15,9 +17,6 @@
             "homepage": "http://beausimensen.com"
         }
     ],
-    "require": {
-        "sculpin/sculpin": "^3.0"
-    },
     "scripts": {
         "publish": [
             "./publish.sh"

@@ -1,0 +1,12 @@
+---
+layout: default
+use: [posts_categories]
+---
+<h1>Category</h1>
+<ul>
+    {% for category,posts in data.posts_categories|sort|reverse %}
+        <li>
+            <a href="{{ site.url }}/posts/category/{{ category|url_encode(true) }}">{{ category }}</a> ({{posts|length}})
+        </li>
+    {% endfor %}
+</ul>
