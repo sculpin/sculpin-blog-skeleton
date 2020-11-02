@@ -41,7 +41,7 @@ Install
 Create a new project using composer:
 
 ```bash
-$ composer create-project -s dev sculpin/blog-skeleton my-blog
+$ composer create-project sculpin/blog-skeleton my-blog
 ```
 
 This application uses [Symfony's Webpack Encore](https://symfony.com/doc/current/frontend.html)
