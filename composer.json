@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "sculpin/sculpin": "^3.0"
+        "sculpin/sculpin": "^3.1"
     },
     "scripts": {
         "publish": [
