@@ -1,3 +1,6 @@
+sculpin_twig:
+    webpack_manifest: build/manifest.json
+
 sculpin_content_types:
     posts:
         permalink: blog/:year/:month/:day/:filename/
