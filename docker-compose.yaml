@@ -1,0 +1,30 @@
+version: '2.4'
+
+services:
+  app:
+    build:
+      context: .
+      target: sculpin-watch
+    volumes:
+      - /app/output_dev
+      - assets:/app/source/build
+      - ./:/app
+    ports:
+      - 8000:8000
+
+  assets:
+    build:
+      context: .
+      target: assets-watch
+    volumes:
+      - assets:/app/source/build
+      - ./Makefile:/app/Makefile
+      - ./package.json:/app/package.json
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./webpack.config.js:/app/webpack.config.js
+      - ./yarn.lock:/app/yarn.lock
+
+volumes:
+  assets:
+
+# vim: tabstop=2 shiftwidth=2 softtabstop=2 shiftround

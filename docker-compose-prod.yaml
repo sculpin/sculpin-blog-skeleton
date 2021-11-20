@@ -1,0 +1,35 @@
+version: '2.4'
+
+services:
+  app:
+    build:
+      context: .
+      target: sculpin
+    volumes:
+      - assets:/app/source/build
+      - ./:/app
+    working_dir: /app
+    entrypoint: sculpin
+    command:
+      - generate
+      - --env
+      - prod
+
+  assets:
+    build:
+      context: .
+      target: assets-build
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - assets:/app/source/build
+      - ./Makefile:/app/Makefile
+      - ./package.json:/app/package.json
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./webpack.config.js:/app/webpack.config.js
+      - ./yarn.lock:/app/yarn.lock
+
+volumes:
+  assets:
+
+# vim: tabstop=2 shiftwidth=2 softtabstop=2 shiftround
