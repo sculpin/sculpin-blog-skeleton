@@ -8,7 +8,7 @@
         {% block head_meta %}
             <meta name="robots" content="noindex, follow">
         {% endblock %}
-        <link rel="stylesheet" href="{{ site.url }}{{ webpack_manifest['build/app.css']}}" />
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ webpack_manifest['build/app.css']}}" />
 
         <link rel="apple-touch-startup-image" href="{{ site.url }}/build/2048x2048.png">
         <meta name="mobile-web-app-capable" content="yes">
